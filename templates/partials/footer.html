@@ -1,0 +1,42 @@
+{% if site.sellos %}
+<nav aria-label="Instituciones y transparencia" class="border-t border-base-300 bg-base-100">
+  <ul class="mx-auto grid max-w-7xl grid-cols-3 gap-4 px-4 py-8 sm:grid-cols-6">
+    {% for s in site.sellos %}
+    <li><a href="{{ s.url }}" title="{{ s.titulo }}" class="flex h-24 items-center justify-center rounded-box p-2 opacity-90 transition hover:bg-base-200 hover:opacity-100"{% if s.url.startswith('http') %} target="_blank" rel="noopener"{% endif %}>{% if s.imagen %}<img src="{{ s.imagen }}" alt="{{ s.titulo }}" loading="lazy" class="max-h-full max-w-full object-contain">{% else %}<span class="font-display text-3xl font-extrabold tracking-wide text-secondary">{{ s.titulo }}</span>{% endif %}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %}
+<footer class="bg-neutral text-neutral-content">
+  <div class="h-1.5 bg-accent"></div>
+  <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_repeat(4,1fr)]">
+    <div class="flex flex-col gap-4">
+      <div class="flex items-center gap-3">
+        <span class="rounded-box bg-white p-2"><img src="/media/logo-utd.svg" alt="" width="84" height="32" class="h-8 w-auto"></span>
+        <span class="font-display text-lg font-extrabold text-white">{{ site.nombre }}</span>
+      </div>
+      <address class="not-italic leading-relaxed">{{ site.direccion }}<br>{{ site.telefono }}</address>
+      <div class="flex flex-wrap gap-2">
+        {% for red, enlace in site.redes.items() %}
+        <a href="{{ enlace }}" class="btn btn-sm btn-outline border-neutral-content/30 text-neutral-content">{{ red }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    {% for grupo in site.pie %}
+    <nav aria-label="{{ grupo.titulo }}" class="flex flex-col gap-2.5">
+      <h2 class="mb-1 text-sm font-bold uppercase tracking-widest text-accent">{{ grupo.titulo }}</h2>
+      {% for l in grupo.hijos %}
+      <a href="{{ l.url }}" class="link link-hover text-neutral-content/85 hover:text-white">{{ l.titulo }}</a>
+      {% endfor %}
+    </nav>
+    {% endfor %}
+  </div>
+  <div class="border-t border-neutral-content/15">
+    <div class="mx-auto flex max-w-7xl flex-wrap justify-between gap-3 px-4 py-5 text-sm">
+      <span>© {{ year }} {{ site.nombre }} · utd.edu.mx</span>
+      <span class="flex flex-wrap gap-5">
+        {% for l in site.pie_legal %}<a href="{{ l.url }}" class="link link-hover">{{ l.titulo }}</a>{% endfor %}
+      </span>
+    </div>
+  </div>
+</footer>

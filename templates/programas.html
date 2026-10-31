@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Oferta educativa · {{ site.nombre_corto }}{% endblock %}
+{% block main %}
+{% set titulo = "Oferta educativa" %}{% set ruta = [("Oferta educativa", None)] %}
+{% set intro = "Planes 2024 en competencias profesionales: cada ingeniería y licenciatura incluye una salida como Técnico Superior Universitario (TSU). Opción BIS: bilingüe, internacional y sustentable." %}
+{% include "partials/encabezado.html" %}
+<div class="mx-auto max-w-7xl px-4 py-14">
+  {% for nivel, grupo in programas|groupby("nivel") %}
+  <section class="mb-14">
+    <h2 class="mb-6 text-3xl font-extrabold">{{ nivel }}s</h2>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {% for p in grupo %}
+      <a href="{{ url(p.path) }}" class="group card card-border overflow-hidden transition hover:shadow-md">
+        <figure class="aspect-[3/2] overflow-hidden bg-base-200">
+          {% if p.imagen is defined and p.imagen %}<img src="{{ p.imagen }}" alt="" class="size-full object-cover transition duration-300 group-hover:scale-105" loading="lazy">{% endif %}
+        </figure>
+        <div class="card-body gap-3">
+          <div class="flex flex-wrap gap-2">
+            <span class="badge badge-soft badge-primary">{{ p.nivel }}</span>
+            {% if p.gemelo %}<span class="badge bg-neutral text-accent">También BIS</span>{% endif %}
+          </div>
+          <h3 class="card-title font-display text-xl">{{ p.nombre }}</h3>
+          {% if p.salidas_tsu %}
+          <p class="text-base-content/75"><strong class="text-base-content">Salidas TSU:</strong>
+            {% for s in p.salidas_tsu %}{{ s.nombre[7:] }}{% if not loop.last %} · {% endif %}{% endfor %}</p>
+          {% elif p.linea_investigacion is defined %}
+          <p class="text-base-content/75"><strong class="text-base-content">Línea de investigación:</strong> {{ p.linea_investigacion }}</p>
+          {% endif %}
+          <span class="mt-auto font-semibold text-primary">Plan de estudios →</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,87 @@
+<header class="sticky top-0 z-40 border-b border-base-300 bg-base-100/95 backdrop-blur">
+  <nav class="navbar mx-auto max-w-7xl gap-2 px-4" aria-label="Principal">
+    <div class="navbar-start w-auto shrink-0">
+      <a href="/" class="flex items-center gap-3" aria-label="{{ site.nombre }}, inicio">
+        <img src="/media/logo-utd.svg" alt="" width="105" height="40" class="h-10 w-auto">
+        <span class="hidden flex-col whitespace-nowrap leading-tight sm:flex lg:max-[1360px]:hidden">
+          <span class="font-display text-base font-extrabold">Universidad Tecnológica</span>
+          <span class="font-display text-sm font-semibold text-primary">de Durango</span>
+        </span>
+      </a>
+    </div>
+
+    <div class="navbar-center flex-1 justify-center max-lg:hidden">
+      <ul class="flex items-center gap-1">
+        {% for item in site.menu %}
+        {% if item.hijos or item.url == "/oferta-educativa/" %}
+        {% set oferta = item.url == "/oferta-educativa/" %}
+        <li class="menu-hover">
+          <button type="button" class="btn btn-text whitespace-nowrap px-3 font-semibold {% if path.startswith(item.url) %}text-primary{% endif %}" aria-haspopup="true">
+            {{ item.titulo }}
+            <svg class="menu-chevron size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="menu-panel {{ 'menu-panel-center' if oferta else '' }}">
+            {% if oferta %}
+            <div class="menu-box w-[44rem] max-w-[95vw] p-5">
+              <div class="grid grid-cols-2 gap-x-8 gap-y-5">
+                {% for nivel, items in oferta_menu %}
+                <div class="{{ 'row-span-2' if loop.first }}">
+                  <p class="mb-2 px-3 text-xs font-bold uppercase tracking-widest text-primary">{{ nivel }}</p>
+                  <ul class="flex flex-col">
+                    {% for p in items %}<li><a class="menu-link" href="{{ p.url }}">{{ p.titulo }}</a></li>{% endfor %}
+                  </ul>
+                </div>
+                {% endfor %}
+              </div>
+              <div class="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-base-300 px-3 pt-4">
+                <a href="{{ item.url }}" class="font-semibold text-primary hover:underline">Ver toda la oferta educativa →</a>
+                <a href="/bis/" class="text-sm text-base-content/70 hover:text-primary">¿Qué es la modalidad BIS?</a>
+              </div>
+            </div>
+            {% else %}
+            <ul class="menu-box min-w-64 p-2">
+              {% for sub in item.hijos %}<li><a class="menu-link" href="{{ sub.url }}">{{ sub.titulo }}</a></li>{% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+        </li>
+        {% else %}
+        <li><a href="{{ item.url }}" class="btn btn-text whitespace-nowrap px-3 font-semibold {% if path.startswith(item.url) %}text-primary{% endif %}">{{ item.titulo }}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="navbar-end w-auto shrink-0 gap-2 max-lg:ml-auto">
+      <a href="/aspirantes/preinscripcion/" class="btn btn-accent rounded-full max-sm:btn-sm">Preinscríbete</a>
+      <details class="relative lg:hidden">
+        <summary class="btn btn-square btn-outline list-none" aria-label="Abrir menú">
+          <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </summary>
+        <div class="absolute right-0 mt-2 w-[min(90vw,22rem)] rounded-box border border-base-300 bg-base-100 p-3 shadow-lg">
+          <ul class="menu max-h-[75vh] flex-nowrap overflow-y-auto">
+            {% for item in site.menu %}
+            {% if item.url == "/oferta-educativa/" %}
+            <li><span class="menu-title">{{ item.titulo }}</span>
+              <ul>
+                {% for nivel, items in oferta_menu %}
+                <li class="menu-title pt-2 text-xs">{{ nivel }}</li>
+                {% for p in items %}<li><a href="{{ p.url }}">{{ p.titulo }}</a></li>{% endfor %}
+                {% endfor %}
+                <li><a href="{{ item.url }}" class="font-semibold">Ver toda la oferta →</a></li>
+              </ul>
+            </li>
+            {% elif item.hijos %}
+            <li><span class="menu-title">{{ item.titulo }}</span>
+              <ul>{% for sub in item.hijos %}<li><a href="{{ sub.url }}">{{ sub.titulo }}</a></li>{% endfor %}</ul>
+            </li>
+            {% else %}
+            <li><a href="{{ item.url }}">{{ item.titulo }}</a></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </details>
+    </div>
+  </nav>
+</header>

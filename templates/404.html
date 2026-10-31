@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Página no encontrada · {{ site.nombre_corto }}{% endblock %}
+{% block main %}
+<section class="mx-auto flex max-w-3xl flex-col items-start gap-6 px-4 py-24">
+  <a href="/" class="mb-4"><img src="/media/logo-utd-completo.svg" alt="{{ site.nombre }}" width="499" height="322" class="h-32 w-auto sm:h-40"></a>
+  <span class="font-display text-7xl font-extrabold text-primary">404</span>
+  <h1 class="text-4xl font-extrabold">No encontramos esta página</h1>
+  <p class="text-lg text-base-content/75">Es posible que haya cambiado de dirección con el nuevo sitio. Prueba desde el inicio o la oferta educativa.</p>
+  <div class="flex flex-wrap gap-3">
+    <a href="/" class="btn btn-primary rounded-full">Ir al inicio</a>
+    <a href="/oferta-educativa/" class="btn btn-outline rounded-full">Oferta educativa</a>
+  </div>
+</section>
+{% endblock %}

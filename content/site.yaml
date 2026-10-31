@@ -1,0 +1,104 @@
+nombre: Universidad Tecnológica de Durango
+nombre_corto: UTD
+url: https://utd.edu.mx
+descripcion: Educación superior tecnológica en Durango. Técnico Superior Universitario, ingenierías, licenciaturas y maestría con estadías en la industria.
+telefono: (618) 137-30-50
+direccion: Carretera Durango–Mezquital, Km. 4.5, Gabino Santillán, C.P. 34308, Durango, Dgo.
+redes:
+  Facebook: https://www.facebook.com/UTDURANGO
+  Instagram: https://www.instagram.com/UTDURANGO/
+  YouTube: https://www.youtube.com/channel/UCE7PoTstFJfzaRTsalkBqUg
+  X: https://twitter.com/UTDURANGO
+
+# Main menu. Internal URLs end in "/"; build.py warns about any that have no page yet.
+menu:
+  - titulo: Nosotros
+    url: /nosotros/
+    hijos:
+      - {titulo: "Misión, visión y valores", url: /nosotros/mision-vision-valores/}
+      - {titulo: Historia, url: /nosotros/historia/}
+      - {titulo: Mensaje del Rector, url: /nosotros/mensaje-del-rector/}
+      - {titulo: Normatividad, url: /nosotros/normatividad/}
+      - {titulo: Política de Calidad, url: /nosotros/politica-de-calidad/}
+      - {titulo: Recorrido virtual, url: /nosotros/recorrido-virtual/}
+      - {titulo: Contacto, url: /contacto/}
+  - titulo: Oferta educativa
+    url: /oferta-educativa/
+  - titulo: Aspirantes
+    url: /aspirantes/
+    imagen: /media/paginas/aspirantes/alumna-mascota-bufalo.jpg
+    hijos:
+      - {titulo: Preinscripción, url: /aspirantes/preinscripcion/}
+      - {titulo: Inscripción, url: /aspirantes/inscripcion/}
+      - {titulo: Lista de aceptados, url: /aspirantes/lista-de-aceptados/}
+      - {titulo: Modalidad BIS, url: /bis/}
+      - {titulo: Centro de Idiomas, url: /centro-de-idiomas/}
+  - titulo: Alumnos
+    url: /alumnos/
+    hijos:
+      - {titulo: Horarios de grupo, url: /alumnos/horarios/}
+      - {titulo: Calendario escolar, url: "https://drive.google.com/file/d/1xtdaMMw1Bf7BAlvsnt2pjvrdeAbK_WzD/view"}
+      - {titulo: Horarios extraordinarios, url: /alumnos/horarios-extraordinarios/}
+      - {titulo: Lista de grupos, url: /alumnos/lista-de-grupos/}
+      - {titulo: Titulación, url: /alumnos/titulacion/}
+      - {titulo: Becas, url: /alumnos/becas/}
+      - {titulo: Seguro facultativo, url: /alumnos/seguro-facultativo/}
+      - {titulo: Be Búfalo, url: /alumnos/be-bufalo/}
+  - titulo: Vinculación
+    url: /vinculacion/
+    hijos:
+      - {titulo: Servicios para la industria, url: /vinculacion/servicios-para-la-industria/}
+      - {titulo: Estadías, url: /vinculacion/estadias/}
+      - {titulo: Bolsa de trabajo, url: /vinculacion/bolsa-de-trabajo/}
+      - {titulo: Internacionalización, url: /vinculacion/internacionalizacion/}
+  - titulo: Investigación
+    url: /investigacion/
+
+# Footer link groups (the important links from the legacy site).
+pie:
+  - titulo: Normatividad
+    url: /nosotros/normatividad/
+    hijos:
+      - {titulo: Código de Conducta, url: "https://drive.google.com/file/d/15HpgsDpXnp_K0j9WuO97IYOlhCMrl4WS/view"}
+      - {titulo: Código de Ética, url: "https://drive.google.com/file/d/1GGbuUd0TFPYMl7awsMTGzZQDjNMnFWo9/view"}
+      - {titulo: Reglamento Académico, url: "https://drive.google.com/file/d/1nFBnih0XDBKzR5GToKMMlAFXgFzTZLG4/view"}
+      - {titulo: Reglamento Interno, url: "https://drive.google.com/file/d/1RPmcoMYKbvkX7TF5OJXoN6ukXyCNcQQI/view"}
+      - {titulo: Plan de Desarrollo Institucional, url: "https://drive.google.com/file/d/13KCCwV8jEZu4cMzvIGj3Vhlxg8pUFTFD/view"}
+      - {titulo: Toda la normatividad →, url: /nosotros/normatividad/}
+  - titulo: Alumnos
+    url: /alumnos/
+    hijos:
+      - {titulo: Horarios de grupo, url: /alumnos/horarios/}
+      - {titulo: Calendario escolar, url: "https://drive.google.com/file/d/1xtdaMMw1Bf7BAlvsnt2pjvrdeAbK_WzD/view"}
+      - {titulo: Reinscripción, url: "https://drive.google.com/file/d/1G_jJFR7wmGAtXz6HD6PgcT91A2e_thGK/view"}
+      - {titulo: Titulación, url: /alumnos/titulacion/}
+      - {titulo: Seguro facultativo, url: /alumnos/seguro-facultativo/}
+  - titulo: Sistemas
+    url: ""
+    hijos:
+      - {titulo: Control Escolar, url: "https://sist-control-escolar.com/apex/f?p=163:LOGIN"}
+      - {titulo: Moodle, url: "http://189.197.187.188/moodle"}
+      - {titulo: Biblioteca Digital, url: "http://www.bibliotecaecest.mx/"}
+      - {titulo: Schoology, url: "https://www.schoology.com/"}
+  - titulo: Enlaces de interés
+    url: ""
+    hijos:
+      - {titulo: Revista INGENIUM, url: "https://sites.google.com/utd.edu.mx/ingenium/inicio"}
+      - {titulo: Investigación, url: /investigacion/}
+      - {titulo: Servicios para la industria, url: /vinculacion/servicios-para-la-industria/}
+      - {titulo: Bolsa de trabajo, url: /vinculacion/bolsa-de-trabajo/}
+      - {titulo: Centro de Idiomas, url: /centro-de-idiomas/}
+
+# Logo strip above the footer (accreditation, transparency and government links from the legacy site).
+sellos:
+  - {titulo: CIEES, url: "https://www.ciees.edu.mx/", imagen: /media/sellos/ciees.jpg}
+  - {titulo: CONAC, url: /conac/, imagen: /media/sellos/conac.png}
+  - {titulo: Contraloría Social, url: "https://sites.google.com/utd.edu.mx/contraloria-social", imagen: /media/sellos/contraloria-social.jpg}
+  - {titulo: Gobierno del Estado de Durango, url: "https://www.durango.gob.mx/", imagen: /media/sellos/gobierno-del-estado.png}
+  - {titulo: ECEST, url: "http://www.bibliotecaecest.mx/", imagen: /media/sellos/ecest.png}
+  - {titulo: Informe de Gestión Pública, url: "http://transparencia.durango.gob.mx/UTD", imagen: /media/sellos/informe-gestion-publica.png}
+
+pie_legal:
+  - {titulo: Avisos de privacidad, url: /avisos-de-privacidad/}
+  - {titulo: Política de Calidad, url: /nosotros/politica-de-calidad/}
+  - {titulo: Contacto, url: /contacto/}

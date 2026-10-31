@@ -1,0 +1,121 @@
+# Generado por tools/extract_mcr.py desde:
+#   Educacion/TÉCNICO SUPERIOR UNIVERSITARIO EN ENSEÑANZA DEL IDIOMA INGLÉS  BIS/10.1 MCR BIS LIC EN EDUCACION 2024.pdf
+propedeutico: true
+slug: educacion-bis
+nombre: Educación
+nivel: Licenciatura
+modelo: Competencias profesionales
+plan: 2024
+bis: true
+cuatrimestres: 11
+horas_totales: 6195
+creditos_totales: 387.18
+ciclos:
+- numero: 1
+  horas: 2325
+  creditos: 145.31
+  competencia: Desarrollar el proceso de enseñanza aprendizaje, considerando las necesidades de los estudiantes,
+    promoviendo habilidades integrales y de aprender a aprender, así como el uso de las nuevas tecnologías,
+    a través de la planeación, instrumentación didáctica y evaluación, para cumplir con los objetivos
+    pedagógicos e institucionales.
+  ingles: A2
+- numero: 2
+  horas: 1650
+  creditos: 103.12
+  competencia: Enseñar el idioma inglés mediante el dominio del nivel B1 del MCER (Marco de Referencia
+    Europeo) a través de los diferentes métodos, enfoques, técnicas y estrategias de la enseñanza del
+    inglés para desarrollar las distintas habilidades lingüísticas que permitan desenvolverse en ámbitos
+    personales, laborales, académicos y sociales con confianza, precisión, fluidez y eficacia.
+  ingles: B1
+- numero: 3
+  horas: 2220
+  creditos: 138.75
+  competencia: Administrar, gestionar, y desarrollar procesos educativos, institucionales y escolares,
+    con base en las teorías pedagógicas y de la psicología de la educación, mediante metodologías y técnicas
+    de evaluación y gestión educativa para atender las necesidades educativas actuales y contribuir al
+    desarrollo de la organización y del entorno social.
+  ingles: B2
+mapa:
+  0:
+  - [Introducción a la Lengua Inglesa, 225, ingles]
+  - [Taller de Inglés, 150, ingles]
+  - [Desarrollo Sostenible, 60, formacion]
+  - [Competencias Globales, 60, formacion]
+  - [Tutorías, 30, formacion]
+  1:
+  - [Inglés I, 225, ingles]
+  - [Desarrollo Humano y Valores, 60, formacion]
+  - [Fundamentos Pedagógicos de la Educación, 75, ciencias]
+  - [Psicologia Educativa y Etapas del Desarrollo, 105, especifica]
+  - [Fundamentos de Matemáticas, 60, especifica]
+  - [La Educación en México, 60, especifica]
+  - [Comunicación y Habilidades Digitales, 75, especifica]
+  2:
+  - [Inglés II, 150, ingles]
+  - [Habilidades Socioemocionales y Manejo de Conflictos, 60, formacion]
+  - [Metodología de la Didáctica I, 75, ciencias]
+  - [Diseño de Material Didáctico I, 75, especifica]
+  - [Probabilidad y Estadística Aplicadas a la Educación, 60, especifica]
+  - [Evaluación del Proceso de Enseñanza - Aprendizaje, 90, especifica]
+  - [Metodología de la Investigación, 60, especifica]
+  3:
+  - [Inglés III, 150, ingles]
+  - [Desarrollo del Pensamiento y Toma de Decisiones, 60, formacion]
+  - [Metodología de la Didáctica II, 60, ciencias]
+  - [Diseño de Material Didáctico II, 90, especifica]
+  - [Instrumentos de Evaluación, 75, especifica]
+  - [Planeacion Educativa, 75, especifica]
+  - [Proyecto Integrador I, 60, proyecto]
+  4:
+  - [Inglés IV, 120, ingles]
+  - [Ética Profesional, 60, formacion]
+  - [Fonética, 75, ciencias]
+  - [Diseño de Situaciones de Aprendizaje I, 75, especifica]
+  - [Estrategias de Enseñanza de la Lengua Inglesa I, 60, especifica]
+  - [Metodología de la Enseñanza de Contenidos, 60, especifica]
+  - [Enseñanza de Estructura Gramatical Inglesa, 75, especifica]
+  5:
+  - [Inglés V, 120, ingles]
+  - [Liderazgo de Equipos de Alto Desempeño, 60, formacion]
+  - [Enseñanza de Habilidades Productivas, 75, ciencias]
+  - [Diseño de Situaciones de Aprendizaje II, 75, especifica]
+  - [Estrategias de Enseñanza de la Lengua Inglesa II, 75, especifica]
+  - [Enseñanza de Habilidades Receptivas, 60, especifica]
+  - [Proyecto Integrador II, 60, proyecto]
+  6:
+  - [Estadía · Título de TSU, 600, estadia]
+  7:
+  - [Inglés VI, 105, ingles]
+  - [Habilidades Gerenciales, 60, formacion]
+  - [Investigación Evaluativa, 75, ciencias]
+  - [Política Educativa, 75, especifica]
+  - [Administración Educativa, 60, especifica]
+  - [Psicopedagogía, 90, especifica]
+  - [Psicolingüístic a, 75, especifica]
+  8:
+  - [Inglés VII, 105, ingles]
+  - [Negociación Empresarial, 60, formacion]
+  - [Evaluacion Educativa, 75, ciencias]
+  - [Gestion Educativa I, 75, especifica]
+  - [Administración Escolar, 75, especifica]
+  - [Diseño Curricular, 90, especifica]
+  - [Planeacion y Organización de Proyectos, 60, especifica]
+  9:
+  - [Inglés VIII, 105, ingles]
+  - [Gestión y Administración de Proyectos y de Personal, 75, formacion]
+  - [Diseño de Entornos Digitales Colaborativos, 75, ciencias]
+  - [Gestion Educativa II, 75, especifica]
+  - [Calidad en las Instituciones Educativas, 75, especifica]
+  - [Diseño Instruccional, 75, especifica]
+  - [Proyecto Integrador III, 60, proyecto]
+  10:
+  - [Estadía · Título de Licenciatura, 600, estadia]
+salidas_tsu:
+- slug: ensenanza-del-idioma-ingles
+  nombre: TSU en Enseñanza del Idioma Inglés
+  competencia: Enseñar el idioma inglés mediante el dominio del nivel B1 del MCER (Marco de Referencia
+    Europeo) a través de los diferentes métodos, enfoques, técnicas y estrategias de la enseñanza del
+    inglés para desarrollar las distintas habilidades lingüísticas que permitan desenvolverse en ámbitos
+    personales, laborales, académicos y sociales con confianza, precisión, fluidez y eficacia.
+  asignaturas: {}
+  fuente: 10.1 MCR BIS LIC EN EDUCACION 2024.pdf

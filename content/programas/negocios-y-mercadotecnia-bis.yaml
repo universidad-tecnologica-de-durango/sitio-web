@@ -1,0 +1,122 @@
+# Generado por tools/extract_mcr.py desde:
+#   DesarrolloDeNegocios/TSU MERCADOTECNIA BIS/33.1 MCR BIS LIC EN NEGOCIOS Y MERCADOTECNIA 2024 (MERCA).pdf
+propedeutico: true
+slug: negocios-y-mercadotecnia-bis
+nombre: Negocios y Mercadotecnia
+nivel: Licenciatura
+modelo: Competencias profesionales
+plan: 2024
+bis: true
+cuatrimestres: 11
+horas_totales: 6405
+creditos_totales: 400.31
+ciclos:
+- numero: 1
+  horas: 2400
+  creditos: 150.0
+  competencia: Gestionar el proceso de comercialización de productos y/o servicios a partir del diagnóstico
+    de mercado, condiciones del entorno, estrategias de venta y herramientas administrativas, con la finalidad
+    de satisfacer las necesidades del cliente, apegados a la legislación vigente para contribuir a la
+    competitividad, posicionamiento nacional e internacional de la organización, así como el impacto y
+    desarrollo social y económico de la región.
+  ingles: A2
+- numero: 2
+  horas: 1740
+  creditos: 108.75
+  competencia: Desarrollar e implementar planes estratégicos con enfoque a la creación de unidades estratégicas
+    de negocios a partir del análisis situacional del entorno, la mezcla de mercadotecnia, las políticas
+    internas y la normatividad vigente, para contribuir al logro de objetivos organizacionales y a una
+    posición competitiva en el ámbito nacional e internacional, fomentando la economía social y solidaria.
+  ingles: B1
+- numero: 3
+  horas: 2265
+  creditos: 141.56
+  competencia: Evaluar unidades estratégicas de negocios a través de modelos estratégicos sostenibles
+    e innovadores que busquen fortalecer la economía social y solidaria en mercados nacionales e internacionales,
+    y aplicar la legislación vigente, considerando las tendencias del entorno globalizado para contribuir
+    a la consolidación y rentabilidad de las organizaciones.
+  ingles: B2
+mapa:
+  0:
+  - [Introducción a la Lengua Inglesa, 225, ingles]
+  - [Taller de Inglés, 150, ingles]
+  - [Desarrollo Sostenible, 60, formacion]
+  - [Competencias Globales, 60, formacion]
+  - [Tutorías, 30, formacion]
+  1:
+  - [Inglés I, 225, ingles]
+  - [Desarrollo Humano y Valores, 60, formacion]
+  - [Mercadotecnia, 75, ciencias]
+  - [Matemáticas, 75, especifica]
+  - [Informática, 75, especifica]
+  - [Fundamentos de Administración y Entorno Empresarial, 90, especifica]
+  - [Comunicación y Habilidades Digitales, 75, especifica]
+  2:
+  - [Inglés II, 150, ingles]
+  - [Habilidades Socioemocionales y Manejo de Conflictos, 60, formacion]
+  - [Estadística I, 90, ciencias]
+  - [Planeación Estratégica, 75, especifica]
+  - [Contabilidad para Negocios, 75, especifica]
+  - [Comportamien To del Consumidor, 60, especifica]
+  - [Economía, 90, especifica]
+  3:
+  - [Inglés III, 150, ingles]
+  - [Desarrollo del Pensamiento y Toma de Decisiones, 60, formacion]
+  - [Legislación Comercial, 75, ciencias]
+  - [Estadística II, 90, especifica]
+  - [Sistema de Investigación de Mercados I, 90, especifica]
+  - [Estrategias de Producto y Precio, 75, especifica]
+  - [Proyecto Integrador I, 60, proyecto]
+  4:
+  - [Inglés IV, 120, ingles]
+  - [Ética Profesional, 60, formacion]
+  - [Mezcla Promocional, 90, ciencias]
+  - [Diseño Digital y Multimedia, 75, especifica]
+  - [Sistema de Investigación de Mercados II, 75, especifica]
+  - [Gestión de Ventas, 90, especifica]
+  - [Administración del Tiempo, 60, especifica]
+  5:
+  - [Inglés V, 120, ingles]
+  - [Liderazgo de Equipos de Alto Desempeño, 60, formacion]
+  - [Logística y Distribución, 90, ciencias]
+  - [Mercadotecnia de Servicios, 75, especifica]
+  - [Mercadotecnia Digital I, 75, especifica]
+  - [Mercadotecnia Estratégica, 90, especifica]
+  - [Proyecto Integrador II, 60, proyecto]
+  6:
+  - [Estadía · Título de TSU, 600, estadia]
+  7:
+  - [Inglés VI, 105, ingles]
+  - [Habilidades Gerenciales, 60, formacion]
+  - [Estadística Aplicada a los Negocios, 90, ciencias]
+  - [Mercadotecnia Internacional, 75, especifica]
+  - [Desarrollo de Nuevos Productos, 75, especifica]
+  - [Tendencias del Mercado y Consumidor Global, 90, especifica]
+  - [Planeación y Organización del Trabajo, 60, especifica]
+  8:
+  - [Inglés VII, 105, ingles]
+  - [Mercadotecnia Digital II, 75, formacion]
+  - [Inteligencia de Mercados, 90, ciencias]
+  - [Gestión de la Calidad, 60, especifica]
+  - [Inteligencia Financiera, 75, especifica]
+  - [Administración de la Producción, 75, especifica]
+  - [Gestión del Talento Humano, 75, especifica]
+  9:
+  - [Inglés VIII, 105, ingles]
+  - [Cultura Emprendedora, 60, formacion]
+  - [Cadena de Suministro, 75, ciencias]
+  - [Plan de Negocios, 90, especifica]
+  - [Comunicación Integral de la Mercadotecnia, 90, especifica]
+  - [Derecho Corporativo, 75, especifica]
+  - [Proyecto Integrador III, 60, proyecto]
+  10:
+  - [Estadía · Título de Licenciatura, 600, estadia]
+salidas_tsu:
+- slug: mercadotecnia
+  nombre: TSU en Mercadotecnia
+  competencia: Desarrollar e implementar planes estratégicos con enfoque a la creación de unidades estratégicas
+    de negocios a partir del análisis situacional del entorno, la mezcla de mercadotecnia, las políticas
+    internas y la normatividad vigente, para contribuir al logro de objetivos organizacionales y a una
+    posición competitiva en el ámbito nacional e internacional, fomentando la economía social y solidaria.
+  asignaturas: {}
+  fuente: 33.1 MCR BIS LIC EN NEGOCIOS Y MERCADOTECNIA 2024 (MERCA).pdf

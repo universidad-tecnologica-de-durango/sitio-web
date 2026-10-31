@@ -1,0 +1,119 @@
+# Generado por tools/extract_mcr.py desde:
+#   DisenoDigitalYProduccionAudivisual/TSU EN DISEÑO DIGITAL EN ANIMACIÓN/PRODUCTOS CURRICULARES/49.1 MCR LIC EN DISEÑO DIGITAL 2024.pdf
+propedeutico: Curso de inglés previo al primer cuatrimestre; no está en el mapa curricular oficial del
+  programa regular.
+slug: diseno-digital-y-produccion-audiovisual
+nombre: Diseño Digital y Producción Audiovisual
+nivel: Licenciatura
+modelo: Competencias profesionales
+plan: 2024
+bis: false
+cuatrimestres: 11
+horas_totales: 5850
+creditos_totales: 365.62
+ciclos:
+- numero: 1
+  horas: 2025
+  creditos: 126.56
+  competencia: Desarrollar modelos físicos, digitales mediante técnicas representación visual, principios
+    de diseño, metodologías de proceso de diseñol y estrategias de mercadotecnia para contribuir al posicionamiento
+    de productos y servicios con un enfoque de responsabilidad social, equidad, inlcusión, excelencia,
+    vanguardia, innovación e interculturalidad.
+  ingles: A1
+- numero: 2
+  horas: 1650
+  creditos: 103.12
+  competencia: Crear contenidos audiovisuales a través de técnicas narrativas, storyboard, animático,
+    animación bi y tridimensional para la comunicación visual de productos y servicioscon un enfoque de
+    responsabilidad social, equidad, inlcusión, excelencia, vanguardia, innovación e interculturalidad.
+  ingles: A2
+- numero: 3
+  horas: 2175
+  creditos: 135.94
+  competencia: Gestionar proyectos audiovisuales y de diseño digital considerando técnicas de animación
+    avanzada, administración de proyectos, diseño del producto, técnicas de postproducción para cumplir
+    los objetivos de comunicación de manera innovadora del cliente y usuario logrando la competitividad
+    del mercado global con un enfoque de responsabilidad social, excelencia, vanguardia e innovación .
+  ingles: B1
+mapa:
+  0:
+  - [Introducción a la Lengua Inglesa, 225, ingles]
+  - [Taller de Inglés, 150, ingles]
+  - [Introducción a la Carrera, 45, formacion]
+  - [Tutorías, 30, formacion]
+  1:
+  - [Inglés I, 75, ingles]
+  - [Desarrollo Humano y Valores, 60, formacion]
+  - [Fundamentos Matemáticos, 105, ciencias]
+  - [Fundamentos de Diseño y del Lenguaje Visual, 105, especifica]
+  - [Representación Visual, 60, especifica]
+  - [Comunicación Gráfica, 45, especifica]
+  - [Comunicación y Habilidades Digitales, 75, especifica]
+  2:
+  - [Inglés II, 75, ingles]
+  - [Habilidades Socioemocionales y Manejo de Conflictos, 60, formacion]
+  - [Geometría Descriptiva, 75, ciencias]
+  - [Ilustración Digital, 90, especifica]
+  - [Modelado Manual, 75, especifica]
+  - [Representación Geométrica, 105, especifica]
+  - [Mercadotecnia, 45, especifica]
+  3:
+  - [Inglés III, 75, ingles]
+  - [Desarrollo del Pensamiento y Toma de Decisiones, 60, formacion]
+  - [Prototipos y Software 3D, 90, ciencias]
+  - [Ilustración para Animación, 90, especifica]
+  - [Proceso de Diseño, 75, especifica]
+  - [Guionismo y Storyboard, 75, especifica]
+  - [Proyecto Integrador I, 60, proyecto]
+  4:
+  - [Inglés IV, 75, ingles]
+  - [Ética Profesional, 60, formacion]
+  - [Física, 60, ciencias]
+  - [Costos, 45, especifica]
+  - [Fotografía y Video, 105, especifica]
+  - [Diseño Editorial y Publicidad Digital, 90, especifica]
+  - [Animación 2D, 90, especifica]
+  5:
+  - [Inglés V, 75, ingles]
+  - [Liderazgo de Equipos de Alto Desempeño, 60, formacion]
+  - [Probabilidad y Estadística, 75, ciencias]
+  - [Animación 3D, 90, especifica]
+  - [Edición de Audio y Video, 75, especifica]
+  - [Imagen Digital Animada, 90, especifica]
+  - [Proyecto Integrador II, 60, proyecto]
+  6:
+  - [Estadía · Título de TSU, 600, estadia]
+  7:
+  - [Inglés VI, 75, ingles]
+  - [Habilidades Gerenciales, 60, formacion]
+  - [Gestión Creativa, 105, ciencias]
+  - [Semiótica y Hermenéutica, 60, especifica]
+  - [Desarrollo de Personajes 3D, 105, especifica]
+  - [Metodología del Diseño, 60, especifica]
+  - [Mercadotecnia Digital, 60, especifica]
+  8:
+  - [Inglés VII, 75, ingles]
+  - [Diseño de Interfaz Gráfica, 60, formacion]
+  - [Animación 2D Avanzada, 90, ciencias]
+  - [Diseño Sonoro, 90, especifica]
+  - [Rigging 3D, 60, especifica]
+  - [Producción Audiovisual, 90, especifica]
+  - [Estrategias Publicitarias, 60, especifica]
+  9:
+  - [Inglés VIII, 75, ingles]
+  - [Gestión de Proyectos, 60, formacion]
+  - [Identidad Visual, 90, ciencias]
+  - [Composición y Efectos Visuales, 60, especifica]
+  - [Animación de Personajes 3D, 90, especifica]
+  - [Postproducción Audiovisual, 90, especifica]
+  - [Proyecto Integrador III, 60, proyecto]
+  10:
+  - [Estadía · Título de Licenciatura, 600, estadia]
+salidas_tsu:
+- slug: diseno-y-animacion-digital
+  nombre: TSU en Diseño y Animación Digital
+  competencia: Crear contenidos audiovisuales a través de técnicas narrativas, storyboard, animático,
+    animación bi y tridimensional para la comunicación visual de productos y servicioscon un enfoque de
+    responsabilidad social, equidad, inlcusión, excelencia, vanguardia, innovación e interculturalidad.
+  asignaturas: {}
+  fuente: 49.1 MCR LIC EN DISEÑO DIGITAL 2024.pdf

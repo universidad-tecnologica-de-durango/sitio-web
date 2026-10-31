@@ -1,0 +1,149 @@
+# Generado por tools/extract_mcr.py desde:
+#   MantenimientoIndustrial/LICENCIATURA EN INGENIERÍA EN MANTENIMIENTO INDUSTRIAL /TSU MANTENIMIENTO INDUSTRIAL /PRODUCTOS CURRICULARES/MCR LIC EN ING EN MANTENIMIENTO IND (INDUSTRIAL) 2024.pdf
+#   MantenimientoIndustrial/TSU MANTENIMIENTO EN SOLDADURA/PRODUCTOS CURRICULARES/MCR LIC EN ING EN MANTENIMIENTO IND (SOLDADURA) 2024.pdf
+campo_laboral: ['Empresas grandes, medianas, pequeñas y microempresas.', 'Empresas metalmecánicas, alimenticias,
+    del plástico, químicas, petroleras, minería, textil, aeronáuticas, automotrices, de electrodomésticos,
+    farmacéuticas, entre otras.', 'Empresas de servicios: transporte, hoteleras, telecomunicaciones, hospitales,
+    centros comerciales, entre otros.', 'Empresas de generación, transmisión y distribución de energía
+    eléctrica.', Empresas asociadas al sector financiero de apoyo y fomento a MiPyMES., Instituciones
+    gubernamentales de apoyo y fomento al desarrollo., Organizaciones No Gubernamentales., Empresas nacionales
+    e internacionales., Empresas de consultoría en materia de formulación y evaluación de proyectos.,
+  Su propia empresa.]
+puestos: [Gerente de Planta, Gerencia de Mantenimiento, Ingeniero de Mantenimiento, Jefe de Mantenimiento,
+  Supervisor o Encargado de Mantenimiento, Líder de Mantenimiento, Consultor y Asesor de Mantenimiento,
+  Ingeniero de Confiabilidad, Instructor de Mantenimiento, Ingeniero de Planificación del Mantenimiento]
+propedeutico: Curso de inglés previo al primer cuatrimestre; no está en el mapa curricular oficial del
+  programa regular.
+slug: ingenieria-en-mantenimiento-industrial
+nombre: Ingeniería en Mantenimiento Industrial
+nivel: Ingeniería
+modelo: Competencias profesionales
+plan: 2024
+bis: false
+cuatrimestres: 11
+horas_totales: 5850
+creditos_totales: 365.62
+ciclos:
+- numero: 1
+  horas: 2025
+  creditos: 126.56
+  competencia: Gestionar las actividades de mantenimiento mediante la integración del plan maestro, para
+    garantizar la operación y contribuir a la productividad de la organización.
+  ingles: A1
+- numero: 2
+  horas: 1650
+  creditos: 103.12
+  competencia: por_salida
+  ingles: A2
+- numero: 3
+  horas: 2175
+  creditos: 135.94
+  competencia: Optimizar las estrategias de mantenimiento, condiciones de operación de los equipos, los
+    estudios de ingeniería y proyectos técnico- económicos mediante el análisis de factores humanos, tecnológicos,
+    financieros para la gestión del plan maestro de mantenimiento que garantice la disponibilidad, confiabilidad,
+    sostenibilidad y factibilidad de la planta, contribuyendo a la competitividad de la empresa a través
+    de las nuevas tecnologías de la Industria para predecir, planear y controlar los procesos de mantenimiento
+    y lograr los objetivos de la organización.
+  ingles: B1
+mapa:
+  0:
+  - [Introducción a la Lengua Inglesa, 225, ingles]
+  - [Taller de Inglés, 150, ingles]
+  - [Introducción a la Carrera, 45, formacion]
+  - [Tutorías, 30, formacion]
+  1:
+  - [Inglés I, 75, ingles]
+  - [Desarrollo Humano y Valores, 60, formacion]
+  - [Fundamentos Matemáticos, 105, ciencias]
+  - [Fundamentos de Mantenimiento, 60, especifica]
+  - [Dibujo Industrial, 105, especifica]
+  - [Seguridad Industrial, 45, especifica]
+  - [Comunicación y Habilidades Digitales, 75, especifica]
+  2:
+  - [Inglés II, 75, ingles]
+  - [Habilidades Socioemocionales y Manejo de Conflictos, 60, formacion]
+  - [Cálculo Diferencial, 90, ciencias]
+  - [Física, 90, especifica]
+  - [Probabilidad y Estadística, 75, especifica]
+  - [Gestión del Mantenimiento, 90, especifica]
+  - [Termodinámica, 45, especifica]
+  3:
+  - [Inglés III, 75, ingles]
+  - [Desarrollo del Pensamiento y Toma de Decisiones, 60, formacion]
+  - [Cálculo Integral, 60, ciencias]
+  - [Sistemas Eléctricos, 75, especifica]
+  - [Máquinas y Mecanismos, 105, especifica]
+  - [Electrónica Analógica, 90, especifica]
+  - [Proyecto Integrador I, 60, proyecto]
+  4:
+  - [Inglés IV, 75, ingles]
+  - [Ética Profesional, 60, formacion]
+  - [Cálculo de Varias Variables, 75, ciencias]
+  - salida
+  - [Electrónica Digital, 75, especifica]
+  - [Sistemas Neumáticos e Hidráulicos, 105, especifica]
+  5:
+  - [Inglés V, 75, ingles]
+  - [Liderazgo de Equipos de Alto Desempeño, 60, formacion]
+  - [Ecuaciones Diferenciales, 75, ciencias]
+  - salida
+  - [Ciencia de los Materiales, 90, especifica]
+  - [Proyecto Integrador II, 60, proyecto]
+  6:
+  - [Estadía · Título de TSU, 600, estadia]
+  7:
+  - [Inglés VI, 75, ingles]
+  - [Habilidades Gerenciales, 60, formacion]
+  - [Física para Ingeniería, 60, ciencias]
+  - [Administración Estratégica para Mantenimiento, 90, especifica]
+  - [Tribología, 90, especifica]
+  - [Instalaciones Eléctricas, 90, especifica]
+  - [Métodos y Sistemas de Trabajo, 60, especifica]
+  8:
+  - [Inglés VII, 75, ingles]
+  - [Ingeniería Económica, 60, formacion]
+  - [Mantenimiento Predictivo Mecánico, 90, ciencias]
+  - [Técnicas TPM y RCM, 75, especifica]
+  - [Ensayos Destructivos, 60, especifica]
+  - [Sistemas Automatizados y Redes Industriales, 105, especifica]
+  - [Protocolos de Operación y Mantenimiento, 60, especifica]
+  9:
+  - [Inglés VIII, 75, ingles]
+  - [Gestión Ambiental, 90, formacion]
+  - [Manufactura Asistida por Computadora, 75, ciencias]
+  - [Gestión del Talento Humano, 45, especifica]
+  - [Ensayos No Destructivos, 90, especifica]
+  - [Visualización y Control de Procesos, 90, especifica]
+  - [Proyecto Integrador III, 60, proyecto]
+  10:
+  - [Estadía · Título de Ingeniería, 600, estadia]
+salidas_tsu:
+- slug: mantenimiento-industrial
+  nombre: TSU en Mantenimiento Industrial
+  competencia: Supervisar el ajuste, reemplazo o fabricación de partes de los sistemas electromecánicos
+    en maquinaria, equipo y redes de distribución industrial con base en la normatividad para asegurar
+    su óptimo funcionamiento.
+  asignaturas:
+    4:
+    - [Máquinas Eléctricas, 60, especifica]
+    - [Mantenimiento a Procesos de Manufactura, 75, especifica]
+    5:
+    - [Automatización y Robótica, 90, especifica]
+    - [Sistemas Térmicos e Industriales, 75, especifica]
+  fuente: MCR LIC EN ING EN MANTENIMIENTO IND (INDUSTRIAL) 2024.pdf
+- slug: mantenimiento-en-soldadura
+  activa: false  # la UTD tiene autorización, pero hoy no la ofrece
+  nombre: TSU en Mantenimiento en Soldadura
+  competencia: Supervisar procesos productivos metal mecánicos en corte y soldadura, a través de sus métodos,
+    plan de acción, pruebas destructivas y no destructivas, herramientas de planeación, supervisión, control
+    y mantenibilidad de los equipos, con base en la orden de trabajo, especificaciones de ingeniería,
+    códigos de fabricación, manuales y normatividad aplicable para satisfacer los requerimientos del cliente
+    y fortalecimiento del sector.
+  asignaturas:
+    4:
+    - [Procesos de Corte y Unión, 60, especifica]
+    - [Procesos de Soldadura I, 75, especifica]
+    5:
+    - [Procesos de Soldadura II, 90, especifica]
+    - [Normas y Estándares de Soldadura, 75, especifica]
+  fuente: MCR LIC EN ING EN MANTENIMIENTO IND (SOLDADURA) 2024.pdf

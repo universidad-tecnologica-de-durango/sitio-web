@@ -1,0 +1,34 @@
+# Schedule PDFs in Google Drive, one entry per program and modality.
+# Leave a modality empty when there is no PDF yet; the page shows it as pending.
+# Links taken from the legacy site (/alumnos/horarios/); update them each cuatrimestre.
+programas:
+  - nombre: Ingeniería en Tecnologías de la Información e Innovación Digital
+    clasica:
+    bis:
+  - nombre: Ingeniería en Energía y Desarrollo Sostenible
+    clasica: https://drive.google.com/file/d/1RsYE38Vbtd7g3ULNHCWnUj9oAQlvfei5/view
+    bis: https://drive.google.com/file/d/1sMRJmbx83X6jRb-97MvNZl_iqR6QALmt/view
+  - nombre: Ingeniería en Logística Internacional
+    clasica:
+    bis:
+  - nombre: Ingeniería en Mantenimiento Industrial
+    clasica:
+    bis:
+  - nombre: Ingeniería Mecatrónica
+    clasica:
+    bis:
+  - nombre: Ingeniería Industrial
+    clasica: https://drive.google.com/file/d/1s4K6zp93JikrDQUAyGSdz3N6Flpa2SRn/view
+    bis: https://drive.google.com/file/d/1dPuRrDanBdGsjz1ZR7cnB8ZqLgWI3Ymo/view
+  - nombre: Licenciatura en Educación
+    clasica: https://drive.google.com/file/d/1eE_rWPkxtbqpew5r7cX8pXkeZL9-ccMN/view
+    bis: https://drive.google.com/file/d/1fnQ6pm4dg1N-uEhq-7lSvRg3tV3znwk5/view
+  - nombre: Licenciatura en Negocios y Mercadotecnia
+    clasica: https://drive.google.com/file/d/1NnlTro19viGv4SWr8NnOd7ABeA8SJCi_/view
+    bis: https://drive.google.com/file/d/1RgEq1-SUKtVzJqUSZHxp8dq775rLFGez/view
+  - nombre: Licenciatura en Diseño Digital y Producción Audiovisual
+    clasica: https://drive.google.com/file/d/1dIgeffsk8gouPiFjFGU16u6VLTqTs_qb/view
+    bis:
+  - nombre: Licenciatura en Comercio Internacional y Aduanas
+    clasica:
+    bis:

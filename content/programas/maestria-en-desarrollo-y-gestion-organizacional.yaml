@@ -1,0 +1,77 @@
+# Transcrito a mano desde:
+#   ~/sistemaUTD/utilerias/seaes/entradas/maestria/MDGO.jpeg (mapa curricular, vigente desde enero de 2025)
+#   ~/sistemaUTD/utilerias/seaes/entradas/maestria/Perfil de egreso MDGO L2.pdf (F-DA-05-PE-MAE-36-L2, mayo 2025)
+# Nota: el mapa oficial indica 690 h / 43.13 créditos para el segundo ciclo, aunque sus
+# cuatrimestres suman 720 h (240 + 240 + 240). Se conservan las cifras oficiales.
+slug: maestria-en-desarrollo-y-gestion-organizacional
+nombre: Maestría en Desarrollo y Gestión Organizacional
+nivel: Maestría
+modelo: Competencias profesionales
+linea_investigacion: Calidad, Innovación y Tecnología
+plan: 2025
+bis: false
+cuatrimestres: 6
+propedeutico: false
+horas_totales: 1365
+creditos_totales: 85.32
+ciclos:
+- numero: 1
+  horas: 675
+  creditos: 42.19
+  competencia: Optimizar la administración de recursos y procesos, fomentando el uso tecnológico y la
+    adaptación a entornos cambiantes para mejorar el desempeño y sostenibilidad de las organizaciones.
+  ingles: null
+- numero: 2
+  horas: 690
+  creditos: 43.13
+  competencia: Generar proyectos innovadores mediante un enfoque colaborativo y adaptativo, considerando
+    estrategias disruptivas y viables; diseñados para resolver problemáticas organizacionales, impulsar
+    el desarrollo y la gestión organizacional, contribuyendo a la construcción de un mundo sostenible.
+  ingles: null
+mapa:
+  1:
+  - [Ética Profesional, 60, formacion]
+  - [Seminario de Investigación I, 45, proyecto]
+  - [Teorías Organizacionales, 60, especifica]
+  - [Administración Estratégica, 60, especifica]
+  2:
+  - [Responsabilidad Social, 60, formacion]
+  - [Seminario de Investigación II, 45, proyecto]
+  - [Gestión Financiera, 60, especifica]
+  - [Comportamiento Organizacional, 60, especifica]
+  3:
+  - [Habilidades Directivas, 60, formacion]
+  - [Seminario de Investigación III, 45, proyecto]
+  - [Toma de Decisiones, 60, especifica]
+  - [Economía, 60, especifica]
+  4:
+  - [Innovación y Productividad, 60, especifica]
+  - [Seminario de Tesis I, 60, proyecto]
+  - [Administración de la Calidad, 60, especifica]
+  - [Mercadotecnia Digital, 60, especifica]
+  5:
+  - [Administración de Proyectos Innovadores y Sostenibles, 60, especifica]
+  - [Seminario de Tesis II, 60, proyecto]
+  - [Cadena de Suministro, 60, especifica]
+  - [Gestión e Implementación de Tecnologías, 60, especifica]
+  6:
+  - [Proyecto de Investigación, 240, estadia]
+salidas_tsu: []
+proposito: El Maestro(a) en Desarrollo y Gestión Organizacional cuenta con las competencias profesionales
+  necesarias para su desempeño en el campo laboral dentro de las áreas estratégicas de las organizaciones
+  para optimizar la administración eficiente de recursos y procesos, fomentando el uso tecnológico y la
+  adaptación a entornos cambiantes para mejorar el desempeño y sostenibilidad de las organizaciones.
+campo_laboral:
+- Empresas industriales, comerciales y de servicios.
+- Organizaciones no gubernamentales.
+- Empresas de economía social y solidaria.
+- Instituciones gubernamentales.
+- Organismos intermedios.
+- Centros de investigación enfocados al área económico-administrativa.
+- Instituciones educativas.
+puestos:
+- Director(a) ejecutivo de programas y proyectos organizacionales
+- Especialista en proyectos de innovación
+- Analista de mercados regionales, nacionales e internacionales
+- Auditor(a) líder de sistemas de control de calidad
+- Consultor(a) en modelos de negocio innovadores

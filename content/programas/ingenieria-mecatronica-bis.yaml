@@ -1,0 +1,135 @@
+# Generado por tools/extract_mcr.py desde:
+#   Mecatronica/BIS/TSU EN ROBÓTICA BIS/61.5 MCR BIS LIC EN ING MECATRÓNICA (ROBÓTICA) 2024.pdf
+#   Mecatronica/BIS/TSU EN SISTEMAS DE MANUFACTURA FLEXIBLE BIS/61.6 MCR BIS LIC EN ING INGENIERÍA MECATRÓNICA 2024 (SISTEMAS DE MANUFACTURA FLEXIBLE).pdf
+propedeutico: true
+slug: ingenieria-mecatronica-bis
+nombre: Ingeniería Mecatrónica
+nivel: Ingeniería
+modelo: Competencias profesionales
+plan: 2024
+bis: true
+cuatrimestres: 11
+horas_totales: 6405
+creditos_totales: 400.31
+ciclos:
+- numero: 1
+  horas: 2400
+  creditos: 150.0
+  competencia: 1. Supervisar sistemas automatizados utilizando tecnología adecuada, de acuerdo a normas,
+    especificaciones técnicas y de seguridad para mantener el correcto funcionamiento en el proceso productivo.
+  ingles: A2
+- numero: 2
+  horas: 1740
+  creditos: 108.75
+  competencia: por_salida
+  ingles: B1
+- numero: 3
+  horas: 2265
+  creditos: 141.56
+  competencia: 3. Diseñar sistemas mecatrónicos con base en los requerimientos del proceso y la detección
+    de áreas de oportunidad mediante metodologías, herramientas de diseño, control, simulación y manufactura
+    para brindar soluciones tecnológicas innovadoras a las necesidades de los procesos productivos y servicios.
+  ingles: B2
+mapa:
+  0:
+  - [Introducción a la Lengua Inglesa, 225, ingles]
+  - [Taller de Inglés, 150, ingles]
+  - [Desarrollo Sostenible, 60, formacion]
+  - [Competencias Globales, 60, formacion]
+  - [Tutorías, 30, formacion]
+  1:
+  - [Inglés I, 225, ingles]
+  - [Desarrollo Humano y Valores, 60, formacion]
+  - [Fundamentos Matemáticos, 105, ciencias]
+  - [Procesos Industriales, 60, especifica]
+  - [Metodología de la Programación, 75, especifica]
+  - [Metrología, 75, especifica]
+  - [Comunicación y Habilidades Digitales, 75, especifica]
+  2:
+  - [Inglés II, 150, ingles]
+  - [Habilidades Socioemocionales y Manejo de Conflictos, 60, formacion]
+  - [Cálculo Diferencial, 90, ciencias]
+  - [Física, 90, especifica]
+  - [Probabilidad y Estadística, 75, especifica]
+  - [Circuitos Eléctricos, 90, especifica]
+  - [Dibujo para Ingenieria, 45, especifica]
+  3:
+  - [Inglés III, 150, ingles]
+  - [Desarrollo del Pensamiento y Toma de Decisiones, 60, formacion]
+  - [Cálculo Integral, 60, ciencias]
+  - [Elementos Mecánicos, 75, especifica]
+  - [Electrónica Digital, 105, especifica]
+  - [Electrónica Analógica y de Potencia, 90, especifica]
+  - [Proyecto Integrador I, 60, proyecto]
+  4:
+  - [Inglés IV, 120, ingles]
+  - [Ética Profesional, 60, formacion]
+  - [Cálculo de Varias Variables, 75, ciencias]
+  - [Estructura y Propiedades de los Materiales, 45, especifica]
+  - salida
+  5:
+  - [Inglés V, 120, ingles]
+  - [Liderazgo de Equipos de Alto Desempeño, 60, formacion]
+  - [Ecuaciones Diferenciales, 75, ciencias]
+  - salida
+  - [Proyecto Integrador II, 60, proyecto]
+  6:
+  - [Estadía · Título de TSU, 600, estadia]
+  7:
+  - [Inglés VI, 105, ingles]
+  - [Habilidades Gerenciales, 60, formacion]
+  - [Modelado y Simulación de Sistemas, 60, ciencias]
+  - [Cinemática y Dinámica de Robots, 90, especifica]
+  - [Analisis de Mecanismos, 75, especifica]
+  - [Instrumentación Virtual, 90, especifica]
+  - [Sistemas Embebidos, 75, especifica]
+  8:
+  - [Inglés VII, 105, ingles]
+  - [Diseño Asistido por Computadora, 60, formacion]
+  - [Ingeniería de Control, 90, ciencias]
+  - [Programación de Robots Industriales, 90, especifica]
+  - [Diseño Mecanico, 75, especifica]
+  - [Sistemas CAM CNC, 75, especifica]
+  - [Diseño de Sistemas Mecatrónicos, 60, especifica]
+  9:
+  - [Inglés VIII, 105, ingles]
+  - [Sistemas Eléctricos Industriales, 60, formacion]
+  - [Control Avanzado, 105, ciencias]
+  - [Administración de Mantenimiento, 60, especifica]
+  - [Ingeniería Asistida por Computadora, 75, especifica]
+  - [Sistemas de Manufactura Flexible, 90, especifica]
+  - [Proyecto Integrador III, 60, proyecto]
+  10:
+  - [Estadía · Título de Ingeniería, 600, estadia]
+salidas_tsu:
+- slug: robotica
+  activa: false  # la UTD tiene autorización, pero hoy no la ofrece
+  nombre: TSU en Robótica
+  competencia: 2. Inspeccionar el funcionamiento y programar aplicación de sistemas robóticos industriales
+    a través de metodologías de programación, acciones de mantenimiento, parámetros técnicos, normatividad
+    aplicable y necesidades de ejecución del trabajo, para conservar las condiciones de operación de los
+    procesos productivos.
+  asignaturas:
+    4:
+    - [Introducción a la Robótica Industrial, 90, especifica]
+    - [Fundamentos de Cinemática, 90, especifica]
+    - [Seguridad en Celdas Robóticas, 90, especifica]
+    5:
+    - [Introducción a los Sistemas de Visión, 60, especifica]
+    - [Fundamentos de Programación de Robots, 105, especifica]
+    - [Mantenimiento a Sistemas Robóticos, 90, especifica]
+  fuente: 61.5 MCR BIS LIC EN ING MECATRÓNICA (ROBÓTICA) 2024.pdf
+- slug: sistemas-de-manufactura-flexible
+  nombre: TSU en Sistemas de Manufactura Flexible
+  competencia: 2. Desarrollar el proceso de manufactura utilizando técnicas y métodos automatizados para
+    la fabricación de piezas y ensambles.
+  asignaturas:
+    4:
+    - [Control de Motores Eléctricos, 90, especifica]
+    - [Procesos de Manufactura, 90, especifica]
+    - [Robótica, 90, especifica]
+    5:
+    - [Control de Procesos de Manufactura, 60, especifica]
+    - [Manufactura Asistida por Computadora, 90, especifica]
+    - [Controladores Lógicos Programables, 105, especifica]
+  fuente: 61.6 MCR BIS LIC EN ING INGENIERÍA MECATRÓNICA 2024 (SISTEMAS DE MANUFACTURA FLEXIBLE).pdf

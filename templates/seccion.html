@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}{{ seccion.titulo }} · {{ site.nombre_corto }}{% endblock %}
+{% block main %}
+{% set titulo = seccion.titulo %}{% set intro = "" %}{% set ruta = [(seccion.titulo, None)] %}
+{% include "partials/encabezado.html" %}
+{% if seccion.imagen %}
+<div class="mx-auto max-w-7xl px-4 pt-14">
+  <img src="{{ seccion.imagen }}" alt="" class="aspect-[21/9] w-full rounded-box object-cover object-[center_35%]">
+</div>
+{% endif %}
+<div class="mx-auto grid max-w-7xl gap-5 px-4 py-14 sm:grid-cols-2 lg:grid-cols-3">
+  {% for t in tarjetas %}
+  <a href="{{ t.url }}" class="card card-border transition hover:border-primary hover:shadow-md">
+    <div class="card-body gap-2">
+      <h2 class="card-title font-display text-xl">{{ t.titulo }}{% if t.externo %} <span class="text-base font-normal text-base-content/60" aria-label="(abre un documento externo)">↗</span>{% endif %}</h2>
+      {% if t.descripcion %}<p class="text-base-content/75">{{ t.descripcion }}</p>{% endif %}
+      <span class="mt-auto pt-2 font-semibold text-primary">Ver →</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ pagina.meta.titulo }} · {{ site.nombre_corto }}{% endblock %}
+{% block description %}{{ pagina.meta.descripcion or site.descripcion }}{% endblock %}
+{% block main %}
+{% set titulo = pagina.meta.titulo %}{% set intro = pagina.meta.descripcion %}{% set ruta = [(pagina.meta.titulo, None)] %}
+{% include "partials/encabezado.html" %}
+{% if pagina.html.strip() or pagina.meta.imagen %}
+<article class="mx-auto max-w-3xl px-4 py-14">
+  {% if pagina.meta.imagen %}<img src="{{ pagina.meta.imagen }}" alt="" class="mb-10 w-full rounded-box">{% endif %}
+  <div class="prose-utd">{{ pagina.html|safe }}</div>
+</article>
+{% else %}<div class="pt-12"></div>{% endif %}
+{% if pagina.meta.directorio %}{% include "partials/directorio.html" %}{% endif %}
+{% endblock %}

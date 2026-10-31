@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}{{ c.meta.nombre }} · {{ site.nombre_corto }}{% endblock %}
+{% block main %}
+{% set titulo = c.meta.nombre %}{% set intro = c.meta.tipo ~ (" · " ~ c.area if c.area else "") %}
+{% set ruta = [("Investigación", "/investigacion/"), (c.meta.nombre, None)] %}
+{% include "partials/encabezado.html" %}
+<div class="mx-auto grid max-w-7xl gap-12 px-4 py-12 lg:grid-cols-[2fr_1fr]">
+  <div class="flex flex-col gap-10">
+    {% if c.html %}<div class="prose-utd">{{ c.html|safe }}</div>{% endif %}
+    {% if c.meta.lineas %}
+    <section>
+      <h2 class="mb-4 text-2xl font-extrabold">Líneas de generación y aplicación del conocimiento</h2>
+      <ul class="flex flex-wrap gap-2">{% for l in c.meta.lineas %}<li class="badge badge-lg badge-soft badge-primary">{{ l }}</li>{% endfor %}</ul>
+    </section>
+    {% endif %}
+    {% if c.meta.proyectos %}
+    <section>
+      <h2 class="mb-4 text-2xl font-extrabold">Proyectos</h2>
+      <ul class="flex flex-col gap-3">
+        {% for pr in c.meta.proyectos %}
+        <li class="rounded-box bg-base-200 p-5"><span class="font-semibold">{{ pr.titulo }}</span>{% if pr.periodo %}<span class="block text-sm text-base-content/70">{{ pr.periodo }}</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </div>
+  <aside class="flex flex-col gap-4">
+    <h2 class="text-xl font-extrabold">Integrantes</h2>
+    <ul class="flex flex-col gap-3">
+      {% for m in c.integrantes %}
+      <li class="flex items-center gap-3">
+        {% if m.meta.foto %}<img src="{{ m.meta.foto }}" alt="" loading="lazy" class="size-12 shrink-0 rounded-full border-2 border-accent object-cover">
+        {% else %}{% set palabras = m.meta.nombre.split() %}<span aria-hidden="true" class="flex size-12 shrink-0 items-center justify-center rounded-full bg-secondary font-display text-sm font-bold text-white">{{ palabras[0][0] }}{{ palabras[-2][0] if palabras|length > 2 else palabras[-1][0] }}</span>{% endif %}
+        <div class="flex flex-col">
+          {% if m.path %}<a href="{{ url(m.path) }}" class="link link-primary font-semibold">{{ m.meta.nombre }}</a>{% else %}<span class="font-semibold">{{ m.meta.nombre }}</span>{% endif %}
+          <span class="text-sm text-base-content/70">{{ m.rol }}{% if m.meta.grado %} · {{ m.meta.grado }}{% endif %}</span>
+        </div>
+      </li>
+      {% else %}
+      <li class="text-base-content/70">Integrantes por publicar.</li>
+      {% endfor %}
+    </ul>
+  </aside>
+</div>
+{% endblock %}

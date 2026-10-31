@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="relative flex min-h-[78vh] items-end overflow-hidden bg-secondary text-white">
+  <video class="absolute inset-0 size-full object-cover motion-reduce:hidden" autoplay muted loop playsinline poster="/media/hero-poster.jpg" aria-hidden="true">
+    <source src="/media/hero-loop.webm" type="video/webm">
+    <source src="/media/hero-loop.mp4" type="video/mp4">
+  </video>
+  <img src="/media/hero-poster.jpg" alt="" class="absolute inset-0 hidden size-full object-cover motion-reduce:block">
+  <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/5"></div>
+  {# The whole hero opens the full video; the loop behind it is a teaser. #}
+  <a href="https://www.youtube.com/watch?v=Dao3y7XzrYk" data-video="Dao3y7XzrYk" data-video-title="Video institucional UTD 2025" class="absolute inset-0 cursor-pointer" tabindex="-1" aria-hidden="true"></a>
+  <a href="https://www.youtube.com/watch?v=Dao3y7XzrYk" data-video="Dao3y7XzrYk" data-video-title="Video institucional UTD 2025" class="group absolute right-4 top-6 inline-flex items-center gap-3 rounded-full bg-black/40 py-1.5 pe-5 ps-1.5 font-semibold backdrop-blur-sm transition hover:bg-black/60 md:right-6">
+    <span class="relative flex size-11 items-center justify-center rounded-full bg-white/90 text-primary transition group-hover:scale-110 group-hover:bg-white">
+      <span class="absolute inset-0 animate-ping rounded-full bg-white/40 motion-reduce:hidden"></span>
+      <svg class="relative ms-0.5 size-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>
+    </span>
+    Ver video institucional
+  </a>
+  <div class="pointer-events-none relative mx-auto w-full max-w-7xl px-4 pb-20">
+    <h1 class="max-w-3xl text-5xl font-extrabold leading-[1.02] md:text-7xl">Aquí empieza tu carrera en la industria.</h1>
+    <div class="pointer-events-auto mt-8 flex flex-wrap items-center gap-5">
+      <a href="/oferta-educativa/" class="btn btn-accent btn-lg rounded-full">Conoce la oferta educativa</a>
+      <a href="/aspirantes/preinscripcion/" class="link font-semibold text-white">Preinscripciones →</a>
+    </div>
+  </div>
+</section>
+
+<section class="mx-auto max-w-7xl px-4 pt-24">
+  <h2 class="mb-9 text-4xl font-extrabold md:text-5xl">Estudia en la UTD</h2>
+  <div class="grid gap-6 md:grid-cols-3">
+    <a href="/oferta-educativa/" class="group flex flex-col gap-4">
+      <span class="aspect-[4/5] overflow-hidden rounded-box bg-primary/10"><img src="/media/estudia-tsu.jpg" alt="" class="size-full object-cover transition group-hover:scale-105" loading="lazy"></span>
+      <span class="font-display text-2xl font-extrabold group-hover:underline">Técnico Superior Universitario</span>
+      <span class="text-lg text-base-content/75">Titúlate como TSU en dos años y entra al mundo laboral.</span>
+    </a>
+    <a href="/oferta-educativa/" class="group flex flex-col gap-4">
+      <span class="aspect-[4/5] overflow-hidden rounded-box bg-accent/20"><img src="/media/estudia-ingenierias.jpg" alt="" class="size-full object-cover transition group-hover:scale-105" loading="lazy"></span>
+      <span class="font-display text-2xl font-extrabold group-hover:underline">Ingenierías y licenciaturas</span>
+      <span class="text-lg text-base-content/75">{{ programas|selectattr("salidas_tsu")|list|length }} programas con salida TSU, la mayoría también en modalidad bilingüe BIS.</span>
+    </a>
+    <a href="/oferta-educativa/" class="group flex flex-col gap-4">
+      <span class="aspect-[4/5] overflow-hidden rounded-box bg-info/15"><img src="/media/estudia-posgrado.jpg" alt="" class="size-full object-cover transition group-hover:scale-105" loading="lazy"></span>
+      <span class="font-display text-2xl font-extrabold group-hover:underline">Maestría</span>
+      <span class="text-lg text-base-content/75">Maestría en Desarrollo y Gestión Organizacional.</span>
+    </a>
+  </div>
+</section>
+
+{% if noticias %}
+<section class="mx-auto max-w-7xl px-4 pt-24">
+  <div class="mb-9 flex items-baseline justify-between gap-4">
+    <h2 class="text-4xl font-extrabold md:text-5xl">Noticias</h2>
+    <a href="/noticias/" class="link link-primary font-semibold">Ver todas →</a>
+  </div>
+  <div class="grid gap-6 md:grid-cols-3">
+    {% for n in noticias %}{% include "partials/tarjeta-noticia.html" %}{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="mx-auto grid max-w-7xl gap-6 px-4 py-24 md:grid-cols-2">
+  <a href="/investigacion/" class="group relative flex min-h-96 items-end overflow-hidden rounded-box bg-secondary text-white">
+    <img src="/media/investigacion.jpg" alt="" class="absolute inset-0 size-full object-cover opacity-60 transition group-hover:scale-105" loading="lazy">
+    <span class="relative flex flex-col gap-2 p-9">
+      <span class="text-sm font-bold uppercase tracking-widest text-accent">Investigación</span>
+      <span class="font-display text-3xl font-extrabold group-hover:underline">Conoce a nuestros cuerpos académicos</span>
+    </span>
+  </a>
+  <a href="/vinculacion/servicios-para-la-industria/" class="group relative flex min-h-96 items-end overflow-hidden rounded-box bg-neutral text-white">
+    <img src="/media/vinculacion.jpg" alt="" class="absolute inset-0 size-full object-cover opacity-60 transition group-hover:scale-105" loading="lazy">
+    <span class="relative flex flex-col gap-2 p-9">
+      <span class="text-sm font-bold uppercase tracking-widest text-accent">Vinculación</span>
+      <span class="font-display text-3xl font-extrabold group-hover:underline">Servicios para la industria</span>
+    </span>
+  </a>
+</section>
+{% endblock %}

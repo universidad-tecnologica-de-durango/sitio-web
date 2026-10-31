@@ -1,0 +1,7 @@
+<a href="{{ url(n.path) }}" class="group flex flex-col gap-3">
+  <span class="aspect-[16/10] overflow-hidden rounded-box bg-base-200">
+    {% if n.imagen %}<img src="{{ n.imagen }}" alt="" class="size-full object-cover transition group-hover:scale-105" loading="lazy">{% endif %}
+  </span>
+  <span class="text-sm font-semibold text-base-content/70">{{ n.meta.fecha|fecha }} · {{ n.meta.categoria }}</span>
+  <span class="font-display text-xl font-bold leading-snug group-hover:underline">{{ n.meta.titulo }}</span>
+</a>

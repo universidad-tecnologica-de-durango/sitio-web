@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Investigación · {{ site.nombre_corto }}{% endblock %}
+{% block main %}
+{% set titulo = "Investigación y desarrollo tecnológico" %}{% set ruta = [("Investigación", None)] %}
+{% set intro = "Cuerpos académicos y grupos disciplinares que generan y aplican conocimiento con la industria, centros de investigación y otras universidades." %}
+{% include "partials/encabezado.html" %}
+<div class="mx-auto max-w-7xl px-4 py-12">
+  <h2 class="mb-6 text-3xl font-extrabold">Cuerpos académicos y grupos disciplinares</h2>
+  <div class="grid gap-5 lg:grid-cols-2">
+    {% for c in cuerpos %}
+    <article class="card card-border">
+      <div class="card-body gap-4">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="badge {{ 'badge-primary' if c.meta.tipo == 'Cuerpo académico' else 'badge-info' }} badge-soft">{{ c.meta.tipo }}</span>
+          {% if c.meta.grado %}<span class="badge badge-outline">{{ c.meta.grado }}</span>{% endif %}
+          {% if c.area %}<span class="text-sm font-semibold text-base-content/70">{{ c.area }}</span>{% endif %}
+        </div>
+        <h3 class="card-title font-display text-2xl"><a href="{{ url(c.path) }}" class="link-hover">{{ c.meta.nombre }}</a></h3>
+        {% if c.meta.lineas %}
+        <ul class="list-disc space-y-1 pl-5">{% for l in c.meta.lineas %}<li>{{ l }}</li>{% endfor %}</ul>
+        {% endif %}
+        <p class="text-sm text-base-content/70">{{ c.integrantes|length }} integrantes · {{ c.meta.proyectos|length }} proyecto{{ 's' if c.meta.proyectos|length != 1 }} en curso · Responsable: {{ c.meta.responsable }}</p>
+        <a href="{{ url(c.path) }}" class="mt-auto font-semibold text-primary">Ver detalle →</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  <a href="https://sites.google.com/utd.edu.mx/ingenium/inicio" class="mt-16 flex flex-col gap-2 rounded-box bg-neutral p-9 text-neutral-content">
+    <span class="text-sm font-bold uppercase tracking-widest text-accent">Divulgación</span>
+    <span class="font-display text-3xl font-extrabold text-white">Revista INGENIUM</span>
+    <span>Revista de Ingeniería Aplicada y Sustentabilidad de la UTD.</span>
+  </a>
+</div>
+{% endblock %}

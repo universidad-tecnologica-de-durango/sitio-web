@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}{{ n.meta.titulo }} · {{ site.nombre_corto }}{% endblock %}
+{% block description %}{{ n.resumen }}{% endblock %}
+{% block main %}
+<article class="mx-auto max-w-3xl px-4 py-12">
+  <nav aria-label="Ruta" class="breadcrumbs text-sm"><ul><li><a href="/">Inicio</a></li><li><a href="/noticias/">Noticias</a></li><li><a href="/noticias/categoria/{{ n.meta.categoria|slug }}/">{{ n.meta.categoria }}</a></li></ul></nav>
+  <p class="mt-6 font-semibold text-base-content/70"><time datetime="{{ n.meta.fecha }}">{{ n.meta.fecha|fecha }}</time></p>
+  <h1 class="mt-2 text-4xl font-extrabold leading-tight md:text-5xl">{{ n.meta.titulo }}</h1>
+  {% if n.imagen %}<img src="{{ n.imagen }}" alt="" class="mt-8 w-full rounded-box">{% endif %}
+  <div class="prose-utd mt-8">{{ n.html|safe }}</div>
+</article>
+{% if recientes %}
+<section class="mx-auto max-w-7xl border-t border-base-300 px-4 py-14">
+  <h2 class="mb-8 text-3xl font-extrabold">Más noticias</h2>
+  <div class="grid gap-6 md:grid-cols-3">{% for n in recientes %}{% include "partials/tarjeta-noticia.html" %}{% endfor %}</div>
+</section>
+{% endif %}
+{% endblock %}

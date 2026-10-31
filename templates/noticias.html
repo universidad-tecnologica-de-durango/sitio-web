@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}{{ categoria or "Noticias" }} · {{ site.nombre_corto }}{% endblock %}
+{% block main %}
+{% set titulo = categoria or "Noticias" %}{% set intro = "" %}
+{% set ruta = [("Noticias", "/noticias/"), (categoria, None)] if categoria else [("Noticias", None)] %}
+{% include "partials/encabezado.html" %}
+<div class="mx-auto max-w-7xl px-4 py-14">
+  {% if noticias %}
+  <div class="grid gap-x-6 gap-y-12 md:grid-cols-3">
+    {% for n in noticias %}{% include "partials/tarjeta-noticia.html" %}{% endfor %}
+  </div>
+  {% else %}
+  <p class="text-lg">Aún no hay noticias publicadas.</p>
+  {% endif %}
+  {% if paginas > 1 %}
+  <nav class="join mt-14 flex justify-center" aria-label="Páginas">
+    {% for i in range(1, paginas + 1) %}
+    <a href="{{ '/noticias/' if i == 1 else '/noticias/pagina/' ~ i ~ '/' }}" class="btn join-item {{ 'btn-primary' if i == pagina }}" {% if i == pagina %}aria-current="page"{% endif %}>{{ i }}</a>
+    {% endfor %}
+  </nav>
+  {% endif %}
+</div>
+{% endblock %}

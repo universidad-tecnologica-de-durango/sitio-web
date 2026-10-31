@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+{% block title %}{{ p.nombre }}{% if p.bis %} (BIS){% endif %} · {{ site.nombre_corto }}{% endblock %}
+{% block main %}
+{% set colores = {
+  "ingles": "bg-info/15 text-base-content border-info/15",
+  "formacion": "bg-base-200 text-base-content border-base-300",
+  "ciencias": "bg-accent/25 text-base-content border-accent/25",
+  "especifica": "bg-primary/10 text-secondary border-primary/10",
+  "proyecto": "bg-neutral text-neutral-content border-neutral",
+  "estadia": "bg-accent text-accent-content border-accent",
+} %}
+<section class="relative flex min-h-[28rem] items-center overflow-hidden bg-secondary text-white">
+  {% if p.imagen is defined and p.imagen %}<img src="{{ p.imagen }}" alt="" class="absolute inset-0 size-full object-cover object-[70%_30%]">{% endif %}
+  <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/65 to-transparent"></div>
+  <div class="relative mx-auto w-full max-w-7xl px-4 py-14">
+    <nav aria-label="Ruta" class="breadcrumbs text-sm text-white/80 [&_li]:text-white/80">
+      <ul><li><a href="/">Inicio</a></li><li><a href="/oferta-educativa/">Oferta educativa</a></li><li>{{ p.nivel }}</li></ul>
+    </nav>
+    <div class="mt-4 flex flex-wrap gap-2">
+      <span class="badge badge-accent">{{ p.nivel }} · Plan {{ p.plan }}</span>
+      {% if p.bis %}<span class="badge bg-white text-neutral">BIS · bilingüe, internacional y sustentable</span>{% endif %}
+    </div>
+    <h1 class="mt-4 max-w-3xl text-4xl font-extrabold leading-tight break-words sm:text-5xl md:text-6xl">{{ p.nombre }}</h1>
+    <div class="mt-8 flex flex-wrap items-center gap-3">
+      <a href="/aspirantes/preinscripcion/" class="btn btn-accent btn-lg rounded-full">Preinscríbete</a>
+      <a href="#mapa" class="btn btn-lg btn-outline rounded-full border-white/60 text-white">Mapa curricular</a>
+      {% if p.gemelo %}
+      <a href="{{ url(p.gemelo.path) }}" class="link font-semibold text-white">{% if p.bis %}Ver modalidad regular{% else %}Ver modalidad BIS{% endif %} →</a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="relative z-10 mx-auto -mt-10 max-w-7xl px-4">
+  <dl class="grid grid-cols-2 overflow-hidden rounded-box bg-base-100 shadow-lg md:grid-cols-5">
+    {% if p.salidas_tsu %}
+    {% set datos = [
+      (p.cuatrimestres, "cuatrimestres"),
+      ("TSU", "título intermedio al " ~ p.tsu_cuatrimestre ~ "º cuatrimestre"),
+      (p.horas_totales|miles ~ " h", p.creditos_totales ~ " créditos"),
+      ("2", "estadías en empresa"),
+      (p.ciclos[-1].ingles or "—", "nivel de inglés al egresar")] %}
+    {% else %}
+    {% set datos = [
+      (p.cuatrimestres, "cuatrimestres"),
+      (p.horas_totales|miles ~ " h", "horas del plan"),
+      (p.creditos_totales, "créditos"),
+      ("Tesis", "proyecto de investigación final"),
+      (p.linea_investigacion, "línea de investigación")] %}
+    {% endif %}
+    {% for valor, etiqueta in datos %}
+    <div class="flex flex-col-reverse gap-1 border-base-300 p-6 md:border-r">
+      <dt class="text-sm font-semibold text-base-content/70">{{ etiqueta }}</dt>
+      <dd class="font-display text-2xl font-extrabold text-secondary">{{ valor }}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+</section>
+
+{% if p.descripcion_html %}
+<section class="mx-auto max-w-3xl px-4 pt-16"><div class="prose-utd">{{ p.descripcion_html|safe }}</div></section>
+{% endif %}
+
+{% if p.galeria %}
+<section class="mx-auto max-w-5xl px-4 pt-16" aria-label="Fotos del programa">
+  <div class="galeria">
+    {% for g in p.galeria %}<a href="{{ g.src }}"><img src="{{ g.src }}" alt="{{ g.alt }}" loading="lazy"></a>{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="mx-auto max-w-7xl px-4 pt-20">
+  <div class="mb-7 flex flex-wrap items-end justify-between gap-5">
+    <div class="max-w-2xl">
+      <h2 class="text-4xl font-extrabold">Tu trayectoria</h2>
+      <p class="mt-2 text-lg text-base-content/75">{% if p.salidas_tsu %}Tres ciclos de formación. Al terminar el segundo obtienes tu título de Técnico Superior Universitario{% if p.salidas_tsu|length > 1 %}; elige la salida que más te interese{% endif %}.{% else %}{{ p.proposito }}{% endif %}</p>
+    </div>
+    {% if p.salidas_tsu|length > 1 %}
+    <div class="flex max-w-full flex-wrap gap-1 rounded-box bg-base-200 p-1" role="group" aria-label="Salida TSU" data-salidas="{{ p.slug }}">
+      {% for s in p.salidas_tsu %}
+      <button type="button" class="btn h-auto min-h-10 whitespace-normal rounded-full border-0 shadow-none aria-pressed:bg-secondary aria-pressed:text-white" data-salida-btn="{{ s.slug }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ s.nombre }}</button>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% for s in p.vista %}
+  <div class="grid gap-5 {{ 'md:grid-cols-3' if p.ciclos|length == 3 else 'md:grid-cols-2' }}" data-salida-panel="{{ p.slug }}" data-salida="{{ s.slug }}" {% if not loop.first %}hidden{% endif %}>
+    {% for c in p.ciclos %}
+    <article class="flex flex-col gap-3 rounded-box p-7 {{ ['bg-primary/10 text-secondary', 'bg-primary text-white', 'bg-neutral text-neutral-content'][loop.index0] }}">
+      <span class="text-sm font-bold uppercase tracking-wider opacity-80">{{ c.numero }}º ciclo de formación</span>
+      <span class="font-display text-2xl font-extrabold">{% if not p.salidas_tsu %}{{ ["Fundamentos de la gestión", "Innovación y proyecto de investigación"][loop.index0] }}{% elif loop.index == 2 %}{{ s.nombre }}{% elif loop.index == 3 %}{{ p.nombre }}{% else %}Formación base{% endif %}</span>
+      <p class="leading-relaxed">{{ (s.competencia or "") if c.competencia == "por_salida" else (c.competencia or "") }}</p>
+      <span class="mt-auto pt-2 text-sm font-semibold opacity-80">{% if c.ingles %}Inglés {{ c.ingles }} · {% endif %}{{ c.horas|miles }} h · {{ c.creditos }} créditos</span>
+    </article>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</section>
+
+<section id="mapa" class="mx-auto max-w-[90rem] px-4 pt-20">
+  <h2 class="mb-5 text-4xl font-extrabold">Mapa curricular</h2>
+  <ul class="mb-5 flex flex-wrap gap-x-5 gap-y-2 text-sm" aria-label="Tipos de asignatura">
+    {% for clave, nombre in p.leyenda %}
+    <li class="flex items-center gap-2"><span class="size-3.5 rounded border {{ colores[clave] }}"></span>{{ nombre }}</li>
+    {% endfor %}
+    {% if p.salidas_tsu|length > 1 %}<li class="flex items-center gap-2"><span class="size-3.5 rounded border-2 border-warning bg-warning/20"></span>Propia de la salida TSU</li>{% endif %}
+  </ul>
+  {% for s in p.vista %}
+  <div class="overflow-x-auto pb-3" data-salida-panel="{{ p.slug }}" data-salida="{{ s.slug }}" {% if not loop.first %}hidden{% endif %}>
+    <div class="grid gap-2" style="grid-template-columns: {{ s.columnas }}; min-width: {{ s.ancho_min }}px">
+      {% for t in s.cuatrimestres %}
+      <div class="flex min-w-0 flex-col gap-1.5">
+        <span class="px-1 text-xs font-bold text-base-content/70 {{ 'text-center' if t.estadia }}">{{ t.etiqueta }}</span>
+        {% for a in t.asignaturas %}
+        {% if a.tipo == "estadia" %}
+        {# Estadía: slim column filling the full height, text rotated to read bottom-up. #}
+        <div class="flex grow items-center justify-center rounded-lg border-2 py-3 {{ colores[a.tipo] }}" title="{{ a.nombre }} · {{ a.horas }} h">
+          <span class="whitespace-nowrap text-[13px] font-bold [writing-mode:vertical-rl] rotate-180">{{ a.nombre }} · {{ a.horas }} h</span>
+        </div>
+        {% else %}
+        {# Every subject box has the same height so rows line up across cuatrimestres. #}
+        {% set enlace = a.nombre in p.optativas|map(attribute='nombre')|list %}
+        <{{ 'a' if enlace else 'div' }}{% if enlace %} href="#optativas"{% endif %} class="{{ 'transition hover:ring-2 hover:ring-primary focus-visible:ring-2 focus-visible:ring-primary ' if enlace }}flex h-[8.5rem] shrink-0 flex-col justify-between gap-1 rounded-lg border-2 p-2 {{ 'border-warning bg-warning/15 text-base-content' if a.salida and p.salidas_tsu|length > 1 else colores[a.tipo] }}" title="{% if enlace %}Ver las opciones de {% endif %}{% if a.etiqueta %}{{ a.etiqueta }}: {% endif %}{{ a.nombre }} · {{ a.horas }} h">
+          <span class="flex flex-col gap-0.5">{% if a.etiqueta %}<span class="text-[11px] font-semibold uppercase tracking-wide opacity-70">{{ a.etiqueta }}</span>{% endif %}<span class="{{ 'line-clamp-4' if a.etiqueta else 'line-clamp-6' }} hyphens-auto break-words text-[13px] font-bold leading-tight" lang="es">{{ a.nombre }}</span></span>
+          <span class="flex items-center justify-between text-xs opacity-80"><span>{{ a.horas }} h</span>{% if enlace %}<span class="font-semibold">ver opciones ↓</span>{% endif %}</span>
+        </{{ 'a' if enlace else 'div' }}>
+        {% endif %}
+        {% endfor %}
+        <span class="px-1 text-xs font-bold text-secondary">{{ t.horas|miles }} h</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+{% if p.optativas %}
+<section id="optativas" class="mx-auto max-w-[90rem] px-4 pt-10">
+  <h2 class="mb-2 text-3xl font-extrabold">Optativas</h2>
+  <p class="mb-6 text-lg text-base-content/75">En cada optativa se cursa una de estas asignaturas, según la oferta de la universidad para cada generación.</p>
+  <div class="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+    {% for o in p.optativas %}
+    <div class="rounded-box border border-base-300 bg-base-100 p-5">
+      <h3 class="font-display text-xl font-extrabold">{{ o.nombre }}</h3>
+      {% if o.cuatrimestre %}<p class="mb-3 text-sm font-semibold text-primary">{{ o.cuatrimestre }}º cuatrimestre</p>{% endif %}
+      <ul class="flex flex-col gap-1.5 text-base">{% for x in o.opciones %}<li class="flex gap-2"><span class="text-primary" aria-hidden="true">•</span>{{ x }}</li>{% endfor %}</ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if p.campo_laboral is defined or p.puestos is defined %}
+<section class="mx-auto grid max-w-7xl gap-12 px-4 pt-20 md:grid-cols-2">
+  {% if p.campo_laboral is defined %}
+  <div>
+    <h2 class="mb-4 text-3xl font-extrabold">¿Dónde trabajarás?</h2>
+    <ul class="list-disc space-y-2 pl-6 text-lg">{% for c in p.campo_laboral %}<li>{{ c }}</li>{% endfor %}</ul>
+  </div>
+  {% endif %}
+  {% if p.puestos is defined %}
+  <div>
+    <h2 class="mb-4 text-3xl font-extrabold">Puestos que podrás ocupar</h2>
+    <div class="flex flex-wrap gap-2.5">{% for x in p.puestos %}<span class="rounded-box border border-base-300 bg-base-200 px-4 py-2.5 font-semibold">{{ x }}</span>{% endfor %}</div>
+  </div>
+  {% endif %}
+</section>
+{% endif %}
+
+<section class="mx-auto max-w-7xl px-4 py-20">
+  <div class="flex flex-wrap items-center justify-between gap-6 rounded-box bg-secondary p-10 text-white">
+    <div>
+      <h2 class="text-3xl font-extrabold">¿Listo para empezar?</h2>
+      <p class="mt-2 text-lg text-white/80">Conoce fechas, requisitos y el proceso de admisión.</p>
+    </div>
+    <a href="/aspirantes/preinscripcion/" class="btn btn-accent btn-lg rounded-full">Preinscríbete</a>
+  </div>
+</section>
+{% endblock %}

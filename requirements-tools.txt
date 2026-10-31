@@ -1,0 +1,5 @@
+# Only for the helper scripts in tools/ (not needed by build.py or CI).
+-r requirements.txt
+pdfplumber>=0.11
+beautifulsoup4>=4.12
+markdownify>=0.13

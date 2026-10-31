@@ -1,0 +1,152 @@
+# Generado por tools/extract_mcr.py desde:
+#   TecnologiasDeLaInformacion/BIS/TSU DESARROLLO DE SOFTWARE MULTIPLATAFORMA BIS/35.4 MCR BIS EN ING EN TI E ID (SOFTWARE) 2024.pdf
+#   TecnologiasDeLaInformacion/BIS/TSU EN CIENCIA DE DATOS BIS/35.5 MCR BIS LIC EN ING EN TI E ID (CIENCIA DE DATOS) 2024.pdf
+propedeutico: true
+slug: ingenieria-en-tecnologias-de-la-informacion-e-innovacion-digital-bis
+nombre: Ingeniería en Tecnologías de la Información e Innovación Digital
+nivel: Ingeniería
+modelo: Competencias profesionales
+plan: 2024
+bis: true
+cuatrimestres: 11
+horas_totales: 6405
+creditos_totales: 400.31
+ciclos:
+- numero: 1
+  horas: 2400
+  creditos: 150.0
+  competencia: Desarrollar soluciones tecnológicas a través de lenguajes de programación estructurada,
+    programación orientada a objetos y de consulta, herramientas de desarrollo asistido de software, usabilidad
+    y pruebas, fundamentos de redes de área local, sistemas operativos, medidas de seguridad informática
+    para contribuir a la eficiencia y productividad en diferentes contextos con un enfoque de impulso
+    al desarrollo social, ambiental y de economía socialmente responsable.
+  ingles: A2
+- numero: 2
+  horas: 1740
+  creditos: 108.75
+  competencia: por_salida
+  ingles: B1
+- numero: 3
+  horas: 2265
+  creditos: 141.56
+  competencia: Desarrollar soluciones de integración de tecnologías de la información mediante metodologías
+    y herramientas de seguridad informática, internet de las cosas, sistemas inteligentes y administración
+    de proyectos; con base en las normas y estándares aplicables para atender las áreas de oportunidad,
+    resolver las necesidades y optimizar los procesos y recursos de diversos sectores.
+  ingles: B2
+mapa:
+  0:
+  - [Introducción a la Lengua Inglesa, 225, ingles]
+  - [Taller de Inglés, 150, ingles]
+  - [Desarrollo Sostenible, 60, formacion]
+  - [Competencias Globales, 60, formacion]
+  - [Tutorías, 30, formacion]
+  1:
+  - [Inglés I, 225, ingles]
+  - [Desarrollo Humano y Valores, 60, formacion]
+  - [Fundamentos Matemáticos, 105, ciencias]
+  - [Fundamentos de Redes, 60, especifica]
+  - [Física, 90, especifica]
+  - [Fundamentos de Programación, 60, especifica]
+  - [Comunicación y Habilidades Digitales, 75, especifica]
+  2:
+  - [Inglés II, 150, ingles]
+  - [Habilidades Socioemocionales y Manejo de Conflictos, 60, formacion]
+  - [Cálculo Diferencial, 90, ciencias]
+  - [Conmutación y Enrutamiento de Redes, 75, especifica]
+  - [Probabilidad y Estadística, 75, especifica]
+  - [Programación Estructurada, 75, especifica]
+  - [Sistemas Operativos, 75, especifica]
+  3:
+  - [Inglés III, 150, ingles]
+  - [Desarrollo del Pensamiento y Toma de Decisiones, 60, formacion]
+  - [Cálculo Integral, 60, ciencias]
+  - [Tópicos de Calidad para el Diseño de Software, 90, especifica]
+  - [Bases de Datos, 75, especifica]
+  - [Programación Orientada a Objetos, 105, especifica]
+  - [Proyecto Integrador I, 60, proyecto]
+  4:
+  - [Inglés IV, 120, ingles]
+  - [Ética Profesional, 60, formacion]
+  - [Cálculo de Varias Variables, 75, ciencias]
+  - salida
+  5:
+  - [Inglés V, 120, ingles]
+  - [Liderazgo de Equipos de Alto Desempeño, 60, formacion]
+  - [Ecuaciones Diferenciales, 75, ciencias]
+  - salida
+  - [Proyecto Integrador II, 60, proyecto]
+  6:
+  - [Estadía · Título de TSU, 600, estadia]
+  7:
+  - [Inglés VI, 105, ingles]
+  - [Habilidades Gerenciales, 60, formacion]
+  - [Formulación de Proyectos de Tecnología, 60, ciencias]
+  - [Fundamentos de Inteligencia Artificial, 90, especifica]
+  - [Ética y Legislación en Tecnologías de la Información, 60, especifica]
+  - [Optativa I, 90, especifica]
+  - [Seguridad Informática, 90, especifica]
+  8:
+  - [Inglés VII, 105, ingles]
+  - [Electrónica Digital, 75, formacion]
+  - [Gestión de Proyectos de Tecnología, 60, ciencias]
+  - [Programación para Inteligencia Artificial, 75, especifica]
+  - [Administración de Servidores, 75, especifica]
+  - [Optativa II, 90, especifica]
+  - [Informática Forense, 75, especifica]
+  9:
+  - [Inglés VIII, 105, ingles]
+  - [Internet de las Cosas, 75, formacion]
+  - [Evaluación de Proyectos de Tecnología, 60, ciencias]
+  - [Ciencia de Datos, 90, especifica]
+  - [Tecnologías Disruptivas, 75, especifica]
+  - [Optativa III, 90, especifica]
+  - [Proyecto Integrador III, 60, proyecto]
+  10:
+  - [Estadía · Título de Ingeniería, 600, estadia]
+salidas_tsu:
+- slug: desarrollo-de-software-multiplataforma
+  predeterminada: true  # salida que se muestra primero
+  nombre: TSU en Desarrollo de Software Multiplataforma
+  optativas:  # nombres de Optativa I–III según el PES de esta salida
+    Optativa I: Bases de Datos en la Nube
+    Optativa II: Programación Móvil Avanzada
+    Optativa III: Frameworks para el Desarrollo Multiplataforma
+  competencia: Desarrollar soluciones tecnológicas multiplataforma de software web y móvil utilizando
+    programación orientada a objetos, frameworks, bases de datos, estándares de calidad y diseño para
+    resolver problemas del sector productivo, con un enfoque de inclusión, compromiso con la responsabilidad
+    social, equidad social y de género, excelencia, vanguardia, innovación social e interculturalidad.
+  asignaturas:
+    4:
+    - [Aplicaciones Web, 75, especifica]
+    - [Estructura de Datos, 75, especifica]
+    - [Desarrollo de Aplicaciones Móviles, 90, especifica]
+    - [Análisis y Diseño de Software, 75, especifica]
+    5:
+    - [Aplicaciones Web Orientadas a Servicios, 90, especifica]
+    - [Bases de Datos Avanzadas, 75, especifica]
+    - [Estándares y Métricas para el Desarrollo de Software, 90, especifica]
+  fuente: 35.4 MCR BIS EN ING EN TI E ID (SOFTWARE) 2024.pdf
+- slug: ciencia-de-datos
+  nombre: TSU en Ciencia de Datos
+  optativas:  # nombres de Optativa I–III según el PES de esta salida
+    Optativa I: Métodos Estadísticos
+    Optativa II: Base de Datos Avanzadas
+    Optativa III: Contenedores de Software
+  competencia: Desarrollar soluciones basadas en datos mediante técnicas y herramientas de ciencia de
+    datos, incluyendo bases de datos, análisis estadístico, visualización de datos, cómputo de alto rendimiento,
+    análisis de algoritmos y estructuras de datos masivos, aprendizaje computacional y programación lógica
+    y funcional, para extraer información relevante que apoye la toma de decisiones estratégicas y operativas
+    en diferentes contextos, promoviendo el desarrollo sostenible, la innovación y la mejora continua
+    de procesos y servicios.
+  asignaturas:
+    4:
+    - [Programación de Lenguajes Especializados, 75, especifica]
+    - [Procesamiento de Información, 75, especifica]
+    - [Programación Lógica y Funcional, 90, especifica]
+    - [Aprendizaje Computacional, 75, especifica]
+    5:
+    - [Cómputo de Alto Rendimiento, 90, especifica]
+    - [Visualización de Datos, 75, especifica]
+    - [Servicios en la Nube, 90, especifica]
+  fuente: 35.5 MCR BIS LIC EN ING EN TI E ID (CIENCIA DE DATOS) 2024.pdf

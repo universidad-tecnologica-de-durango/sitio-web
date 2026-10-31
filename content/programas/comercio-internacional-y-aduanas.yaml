@@ -1,0 +1,122 @@
+# Generado por tools/extract_mcr.py desde:
+#   ComercioExterior/TSU EN CLASIFICACIÓN ARANCELARIA Y DESPACHO ADUANERO/PRODUCTOS CURRICULARES/MCR LIC EN COMERCIO INT Y ADUANAS (CADA) 2024.pdf
+propedeutico: Curso de inglés previo al primer cuatrimestre; no está en el mapa curricular oficial del
+  programa regular.
+slug: comercio-internacional-y-aduanas
+nombre: Comercio Internacional y Aduanas
+nivel: Licenciatura
+modelo: Competencias profesionales
+plan: 2024
+bis: false
+cuatrimestres: 11
+horas_totales: 5850
+creditos_totales: 365.62
+ciclos:
+- numero: 1
+  horas: 2025
+  creditos: 126.56
+  competencia: Planear las funciones de los negocios internacionales y la logística, a través de estrategias
+    aplicadas en el entorno normativo legal vigente y la realización de estudios de mercado, para la comercialización
+    de bienes y servicios.
+  ingles: A1
+- numero: 2
+  horas: 1650
+  creditos: 103.12
+  competencia: Determinar las operaciones del comercio internacional a través de los elementos involucrados,
+    la clasificación, contribuciones y el despacho de mercancías, conforme a la Ley de los Impuestos Generales
+    de Importación y Exportación, el plan logístico, y se gestionan eficientemente los recursos legales
+    aplicables, producto del ejercicio de las facultades de comprobación por parte de la autoridad aduanera
+    en donde determinan las infracciones y sanciones, con el objeto de dejarlos sin efecto jurídico.
+  ingles: A2
+- numero: 3
+  horas: 2175
+  creditos: 135.94
+  competencia: Desarrollar habilidades empresariales que permitan diseñar proyectos de exportacion viables,
+    con base en la normatividad aduanal vigente a través del estudio de las leyes aduaneras, de comercio
+    exterior y sus reglamentos, del impuesto general de importación y exportación y sus referentes internacionales,
+    para el cumplimiento de los requerimientos legales y la toma de decisiones estratégicas.
+  ingles: B1
+mapa:
+  0:
+  - [Introducción a la Lengua Inglesa, 225, ingles]
+  - [Taller de Inglés, 150, ingles]
+  - [Introducción a la Carrera, 45, formacion]
+  - [Tutorías, 30, formacion]
+  1:
+  - [Inglés I, 75, ingles]
+  - [Desarrollo Humano y Valores, 60, formacion]
+  - [Fundamentos Matemáticos, 105, ciencias]
+  - [Introducción a Negocios Internacionales, 60, especifica]
+  - [Introducción a la Logística, 75, especifica]
+  - [Introducción a la Normatividad del Comercio Internacional, 75, especifica]
+  - [Comunicación y Habilidades Digitales, 75, especifica]
+  2:
+  - [Inglés II, 75, ingles]
+  - [Habilidades Socioemocionales y Manejo de Conflictos, 60, formacion]
+  - [Probabilidad y Estadística, 75, ciencias]
+  - [Mercadotecnia, 75, especifica]
+  - [Introducción a la Economía, 75, especifica]
+  - [Introducción al Sistema Armonizado y Merceología, 90, especifica]
+  - [Fundamentos de Administración, 75, especifica]
+  3:
+  - [Inglés III, 75, ingles]
+  - [Desarrollo del Pensamiento y Toma de Decisiones, 60, formacion]
+  - [Contabilidad, 90, ciencias]
+  - [Legislación Aplicada a los Negocios., 75, especifica]
+  - [Geografía Económica Internacional, 75, especifica]
+  - [Clasificación Arancelaria I, 90, especifica]
+  - [Proyecto Integrador I, 60, proyecto]
+  4:
+  - [Inglés IV, 75, ingles]
+  - [Ética Profesional, 60, formacion]
+  - [Introducción a Pedimentos, 90, ciencias]
+  - [Financiamiento y Formas de Pago Internacional, 75, especifica]
+  - [Tecnologías Aplicadas al Proceso de Importación y Exportación, 75, especifica]
+  - [Clasificación Arancelaria II, 75, especifica]
+  - [Infracciones y Sanciones, 75, especifica]
+  5:
+  - [Inglés V, 75, ingles]
+  - [Liderazgo de Equipos de Alto Desempeño, 60, formacion]
+  - [Medios de Defensa, 90, ciencias]
+  - [Programas de Fomento a la Exportación, 90, especifica]
+  - [Introducción a Procedimientos y Trámites Aduanales, 75, especifica]
+  - [Clasificación Arancelaria III, 75, especifica]
+  - [Proyecto Integrador II, 60, proyecto]
+  6:
+  - [Estadía · Título de TSU, 600, estadia]
+  7:
+  - [Inglés VI, 75, ingles]
+  - [Habilidades Gerenciales, 60, formacion]
+  - [Derecho Internacional, 75, ciencias]
+  - [Comercio Sostenible, 90, especifica]
+  - [Nvestigación de Operaciones, 75, especifica]
+  - [Logística Internacional, 75, especifica]
+  - [Envase y Embalaje, 75, especifica]
+  8:
+  - [Inglés VII, 75, ingles]
+  - [Pedimentos y Egislación Aduanera I, 75, formacion]
+  - [Tratados y Acuerdos Comerciales Internacionales, 75, ciencias]
+  - [Multiculturalidad y Protocolo de Negocios, 75, especifica]
+  - [Evaluación de Proyectos, 75, especifica]
+  - [Ecosistemas Igitales Comerciales, 75, especifica]
+  - [Rganismos de Apoyo L Comercio Exterior., 75, especifica]
+  9:
+  - [Inglés VIII, 75, ingles]
+  - [Pedimentos y Legislación Aduanera II, 75, formacion]
+  - [Plan de Negocios de Exportación, 75, ciencias]
+  - [Estrategias de Negociación Internacional, 75, especifica]
+  - [Procedimientos y Trámites Aduanales, 90, especifica]
+  - [Desarrollo Emprendedor y Consultoría, 75, especifica]
+  - [Proyecto Integrador III, 60, proyecto]
+  10:
+  - [Estadía · Título de Licenciatura, 600, estadia]
+salidas_tsu:
+- slug: clasificacion-arancelaria-y-despacho-aduanero
+  nombre: TSU en Clasificación Arancelaria y Despacho Aduanero
+  competencia: Determinar las operaciones del comercio internacional a través de los elementos involucrados,
+    la clasificación, contribuciones y el despacho de mercancías, conforme a la Ley de los Impuestos Generales
+    de Importación y Exportación, el plan logístico, y se gestionan eficientemente los recursos legales
+    aplicables, producto del ejercicio de las facultades de comprobación por parte de la autoridad aduanera
+    en donde determinan las infracciones y sanciones, con el objeto de dejarlos sin efecto jurídico.
+  asignaturas: {}
+  fuente: MCR LIC EN COMERCIO INT Y ADUANAS (CADA) 2024.pdf

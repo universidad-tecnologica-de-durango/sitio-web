@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}CONAC · {{ site.nombre_corto }}{% endblock %}
+{% block description %}Información financiera de la UTD conforme a la Ley General de Contabilidad Gubernamental y las normas del CONAC.{% endblock %}
+{% block main %}
+{% set titulo = "CONAC" %}{% set ruta = [("CONAC", None)] %}
+{% set intro = "Información contable, presupuestaria y programática conforme a la Ley General de Contabilidad Gubernamental." %}
+{% include "partials/encabezado.html" %}
+{# Without JS every year is listed in order; main.js adds the year switcher and search ([data-conac]). #}
+<div class="mx-auto max-w-5xl px-4 py-12" data-conac>
+  <p class="mb-8 text-lg text-base-content/80">Documentos publicados por la Universidad Tecnológica de Durango conforme a las normas del <a class="link link-primary" href="https://www.conac.gob.mx/" target="_blank" rel="noopener">Consejo Nacional de Armonización Contable (CONAC)</a>.</p>
+
+  <div class="mb-8 flex flex-col gap-4" data-conac-controles hidden>
+    <label class="input w-full">
+      <svg class="size-5 shrink-0 opacity-60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" placeholder="Buscar documento (p. ej. Estado de Actividades)" aria-label="Buscar documento" data-conac-buscar>
+    </label>
+    <div class="flex flex-wrap gap-2" role="group" aria-label="Ejercicio">
+      {% for e in ejercicios %}
+      <button type="button" class="btn btn-sm btn-outline rounded-full" data-conac-anio="{{ e.anio }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ e.anio }}</button>
+      {% endfor %}
+    </div>
+    <p class="text-sm text-base-content/70" data-conac-estado aria-live="polite"></p>
+  </div>
+
+  {% for e in ejercicios %}{% set ultimo = loop.first %}
+  <section id="{{ e.anio }}" class="mb-10" data-conac-ejercicio="{{ e.anio }}">
+    <h2 class="mb-4 text-3xl font-extrabold">Ejercicio {{ e.anio }}</h2>
+    <div class="flex flex-col gap-3">
+      {% for p in e.periodos %}
+      <details class="group rounded-box border border-base-300 bg-base-100" {% if ultimo %}open{% endif %} data-conac-periodo>
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-display text-lg font-bold">
+          <span>{{ p.nombre }}</span>
+          <span class="flex items-center gap-3 text-sm font-semibold text-base-content/60"><span data-conac-cuenta>{{ p.documentos|length }} documentos</span><svg class="size-5 transition-transform group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+        </summary>
+        <ul class="grid gap-1 px-3 pb-4 sm:grid-cols-2">
+          {% for d in p.documentos %}
+          <li data-conac-doc><a href="{{ d.url }}" target="_blank" rel="noopener" class="flex items-start gap-2 rounded-field px-2 py-1.5 hover:bg-base-200 hover:text-primary"><svg class="mt-0.5 size-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>{{ d.titulo }}</span></a></li>
+          {% endfor %}
+        </ul>
+      </details>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+  <p class="hidden text-center text-lg text-base-content/70" data-conac-vacio>No hay documentos que coincidan con tu búsqueda.</p>
+</div>
+{% endblock %}

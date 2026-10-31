@@ -1,0 +1,121 @@
+/* build.py copies this folder to .site/src/, so paths are relative to there. */
+@import "tailwindcss";
+@plugin "flyonui";
+@import "../../node_modules/flyonui/variants.css";
+@source "../../templates";
+@source "../../build.py";
+@source "../../node_modules/flyonui/dist/collapse.js";
+
+/* UTD theme: logo greens and gold. */
+@plugin "flyonui/theme" {
+  name: "utd";
+  default: true;
+  color-scheme: light;
+  --color-base-100: oklch(100% 0 0);
+  --color-base-200: oklch(97.4% 0.004 160);
+  --color-base-300: oklch(91% 0.008 160);
+  --color-base-content: oklch(23% 0.02 165);
+  --color-primary: oklch(47% 0.09 168);          /* #0B6B58 */
+  --color-primary-content: oklch(99% 0 0);
+  --color-secondary: oklch(31% 0.06 170);        /* #08392F */
+  --color-secondary-content: oklch(99% 0 0);
+  --color-accent: oklch(83% 0.15 88);            /* #F2C53D */
+  --color-accent-content: oklch(23% 0.02 165);
+  --color-neutral: oklch(23% 0.02 165);          /* #14211D */
+  --color-neutral-content: oklch(97% 0.005 160);
+  --color-info: oklch(62% 0.12 240);
+  --color-info-content: oklch(99% 0 0);
+  --color-success: oklch(62% 0.14 155);
+  --color-success-content: oklch(99% 0 0);
+  --color-warning: oklch(72% 0.15 65);
+  --color-warning-content: oklch(23% 0.02 165);
+  --color-error: oklch(58% 0.2 27);
+  --color-error-content: oklch(99% 0 0);
+  --radius-selector: 999px;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+}
+
+@theme {
+  --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  h1, h2, h3, h4 { @apply font-display tracking-tight; }
+}
+
+/* Header dropdowns: pure CSS (hover or keyboard focus). The panel's top padding
+   bridges the gap under the button, and closing waits a moment so moving the
+   pointer diagonally into the menu doesn't close it. */
+.menu-hover { @apply relative; }
+.menu-panel {
+  @apply absolute left-0 top-full z-50 pt-2;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: opacity 0.15s ease 0.2s, transform 0.15s ease 0.2s, visibility 0s linear 0.35s;
+}
+.menu-panel-center { @apply left-1/2; transform: translate(-50%, 4px); }
+.menu-hover:hover > .menu-panel,
+.menu-hover:focus-within > .menu-panel {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition-delay: 0s;
+}
+.menu-hover:hover > .menu-panel-center,
+.menu-hover:focus-within > .menu-panel-center { transform: translateX(-50%); }
+.menu-hover:hover .menu-chevron,
+.menu-hover:focus-within .menu-chevron { @apply rotate-180; }
+.menu-chevron { @apply transition-transform; }
+.menu-box { @apply rounded-box border border-base-300 bg-base-100 shadow-xl; }
+.menu-link { @apply block rounded-field px-3 py-2 leading-snug text-base-content hover:bg-base-200 hover:text-primary focus-visible:bg-base-200 focus-visible:outline-none; }
+
+/* Video modal (see [data-video] in main.js). */
+.video-modal { @apply m-auto w-[min(92vw,70rem)] overflow-visible bg-transparent p-0 backdrop:bg-black/85; }
+.video-frame { @apply aspect-video w-full overflow-hidden rounded-box bg-black shadow-2xl; }
+.video-frame iframe { @apply size-full border-0; }
+.video-close { @apply absolute -top-12 right-0 flex size-10 items-center justify-center rounded-full bg-white/90 text-lg font-bold text-neutral hover:bg-white; }
+
+/* Breadcrumb separators. */
+.breadcrumbs li + li::before { content: "/"; margin-inline: 0.5rem; opacity: 0.5; }
+
+/* Long-form Markdown content. */
+.prose-utd { @apply text-lg leading-relaxed text-base-content/90; }
+.prose-utd > * + * { @apply mt-5; }
+.prose-utd h2 { @apply mt-10 text-3xl font-extrabold text-base-content; }
+.prose-utd h3 { @apply mt-8 text-2xl font-bold text-base-content; }
+.prose-utd a { @apply link link-primary; }
+.prose-utd ul { @apply list-disc pl-6 space-y-2; }
+.prose-utd ol { @apply list-decimal pl-6 space-y-2; }
+.prose-utd img { @apply rounded-box; }
+.prose-utd table { @apply table text-base; }
+.prose-utd :is(th, td) { @apply text-wrap; }
+.prose-utd blockquote { @apply border-l-4 border-accent pl-5 italic; }
+
+/* Card grid in Markdown: <div class="idiomas"><div><strong>Name</strong><span>Detail</span></div>…</div> */
+.idiomas { @apply grid grid-cols-2 gap-3 sm:grid-cols-4; }
+.idiomas > div { @apply flex flex-col rounded-box border-t-4 border-primary bg-base-200 p-5; }
+.idiomas strong { @apply font-display text-xl font-extrabold text-base-content; }
+.idiomas span { @apply text-base italic text-base-content/70; }
+
+/* Call to action in Markdown: <div class="cta"><p>…</p><a href="…">Label</a></div> */
+.prose-utd .cta { @apply flex flex-col items-start gap-4 rounded-box bg-secondary p-6 text-white sm:flex-row sm:items-center sm:justify-between; }
+.prose-utd .cta strong { @apply text-white; }
+.prose-utd .cta a { @apply btn btn-accent shrink-0 rounded-full no-underline; }
+
+/* Document card in Markdown: <div class="documento"><a href="…"><img …></a><div><p>…</p><a href="…">Label</a></div></div> */
+.prose-utd .documento { @apply grid items-center gap-6 rounded-box bg-base-200 p-6 sm:grid-cols-[12rem_1fr]; }
+.prose-utd .documento > a { @apply block max-w-48 overflow-hidden rounded-box shadow-lg transition hover:-translate-y-1 hover:shadow-xl; }
+.prose-utd .documento img { @apply w-full rounded-none; }
+.prose-utd .documento > div { @apply flex flex-col items-start gap-4; }
+.prose-utd .documento > div > a { @apply btn btn-primary rounded-full no-underline; }
+
+/* Photo galleries in Markdown: <div class="galeria"><a href="big.jpg"><img …></a>…</div> */
+.galeria { @apply grid grid-cols-2 gap-2 sm:grid-cols-3; }
+.galeria:has(> a:nth-child(4):last-child) { @apply sm:grid-cols-2; } /* 4 photos: 2×2 */
+.galeria a { @apply block aspect-[4/3] overflow-hidden rounded-lg bg-base-200; }
+.galeria img { @apply size-full rounded-none object-cover transition duration-300 hover:scale-105; }
+.lightbox { @apply m-auto max-h-[92vh] max-w-[94vw] overflow-visible bg-transparent p-0 backdrop:bg-black/85; }
+.lightbox img { @apply max-h-[88vh] max-w-[94vw] rounded-box object-contain; }
