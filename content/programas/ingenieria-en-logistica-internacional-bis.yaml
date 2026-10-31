@@ -1,5 +1,5 @@
 # Generado por tools/extract_mcr.py desde:
-#   LogisticaInternacion/TSU EN OPERACIONES LOGÍSTICAS Y COMERCIO EXTERIOR BIS/12.1 MCR BIS LIC EN ING EN LOGÍSTICA INTERNACIONAL (OLCE) 2024.pdf
+#   LogisticaInternacion/TSU EN OPERACIONES LOGÍSTICAS Y COMERCIO EXTERIOR BIS/12.1 MCR BIS LIC EN ING EN LOGÍSTICA INTERNACIONAL (OLCE) 2024.pdf
 propedeutico: true
 slug: ingenieria-en-logistica-internacional-bis
 nombre: Ingeniería en Logística Internacional
@@ -38,40 +38,40 @@ mapa:
   - [Competencias Globales, 60, formacion]
   - [Tutorías, 30, formacion]
   1:
-  - [Inglés I, 225, ingles]
+  - [Inglés I, 225, ingles]
   - [Desarrollo Humano y Valores, 60, formacion]
-  - [Fundamentos Matemáticos, 105, ciencias]
-  - [Estructura Organizaciona L, 60, especifica]
+  - [Fundamentos Matemáticos, 105, ciencias]
+  - [Estructura Organizacional, 60, especifica]
   - [Normatividad Aplicada al Comercio Exterior I, 75, especifica]
   - [Economía Internacional, 75, especifica]
-  - [Comunicación y Habilidades Digitales, 75, especifica]
+  - [Comunicación y Habilidades Digitales, 75, especifica]
   2:
-  - [Inglés II, 150, ingles]
+  - [Inglés II, 150, ingles]
   - [Habilidades Socioemocionales y Manejo de Conflictos, 60, formacion]
-  - [Cálculo Diferencial, 90, ciencias]
+  - [Cálculo Diferencial, 90, ciencias]
   - [Clasificación Arancelaria I, 90, especifica]
   - [Normatividad Aplicada al Comercio Exterior II, 75, especifica]
   - [Mercadotecnia Internacional, 75, especifica]
   - [Fundamentos de Logísitica, 60, especifica]
   3:
-  - [Inglés III, 150, ingles]
+  - [Inglés III, 150, ingles]
   - [Desarrollo del Pensamiento y Toma de Decisiones, 60, formacion]
-  - [Cálculo Integral, 60, ciencias]
+  - [Cálculo Integral, 60, ciencias]
   - [Clasificación Arancelaria II, 90, especifica]
-  - [Física, 90, especifica]
+  - [Física, 90, especifica]
   - [Administración de Ventas, 90, especifica]
   - [Proyecto Integrador I, 60, proyecto]
   4:
-  - [Inglés IV, 120, ingles]
-  - [Ética Profesional, 60, formacion]
-  - [Cálculo de Varias Variables, 75, ciencias]
+  - [Inglés IV, 120, ingles]
+  - [Ética Profesional, 60, formacion]
+  - [Cálculo de Varias Variables, 75, ciencias]
   - [Clasificación Arancelaria III, 90, especifica]
-  - [Tramites Legales Aplicados, 75, especifica]
-  - [Probabilidad y Estadisitca, 75, especifica]
+  - [Trámites Legales Aplicados, 75, especifica]
+  - [Probabilidad y Estadística, 75, especifica]
   - [Presupuestos Logísiticos, 75, especifica]
   5:
-  - [Inglés V, 120, ingles]
-  - [Liderazgo de Equipos de Alto Desempeño, 60, formacion]
+  - [Inglés V, 120, ingles]
+  - [Liderazgo de Equipos de Alto Desempeño, 60, formacion]
   - [Ecuaciones Diferenciales, 75, ciencias]
   - [Contribuciones al Comercio Exterior, 90, especifica]
   - [Pedimento y su Legislación, 75, especifica]
@@ -80,7 +80,7 @@ mapa:
   6:
   - [Estadía · Título de TSU, 600, estadia]
   7:
-  - [Inglés VI, 105, ingles]
+  - [Inglés VI, 105, ingles]
   - [Habilidades Gerenciales, 60, formacion]
   - ['Envase, Empaque, Embalaje', 75, ciencias]
   - [Gestión de Operación Aduanera, 75, especifica]
@@ -88,15 +88,15 @@ mapa:
   - [Contabilidad Básica, 90, especifica]
   - [Gestión de Cadena de Suministro, 90, especifica]
   8:
-  - [Inglés VII, 105, ingles]
+  - [Inglés VII, 105, ingles]
   - [Administración de Operaciones de Tráfico I, 75, formacion]
   - [Investigación de Operaciones, 75, ciencias]
   - [Cumplimiento Normativo, 75, especifica]
   - [Administración de Sistemas Logísticos, 75, especifica]
   - [Finanzas Internacionales, 90, especifica]
-  - [Metodología de la Investigación, 60, especifica]
+  - [Metodología de la Investigación, 60, especifica]
   9:
-  - [Inglés VIII, 105, ingles]
+  - [Inglés VIII, 105, ingles]
   - [Administración de Operaciones de Tráfico II, 75, formacion]
   - [Logística de Transporte, 90, ciencias]
   - ['Infracciones, Sanciones y Medios de Defensa', 75, especifica]
@@ -112,4 +112,4 @@ salidas_tsu:
     plan logístico y la legislación aplicable, para desarrollar los procesos de importación y exportación
     de bienes y servicios de las organizaciones.
   asignaturas: {}
-  fuente: 12.1 MCR BIS LIC EN ING EN LOGÍSTICA INTERNACIONAL (OLCE) 2024.pdf
+  fuente: 12.1 MCR BIS LIC EN ING EN LOGÍSTICA INTERNACIONAL (OLCE) 2024.pdf

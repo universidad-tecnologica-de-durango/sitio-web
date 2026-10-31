@@ -30,7 +30,7 @@ ciclos:
 - numero: 3
   horas: 2265
   creditos: 141.56
-  competencia: Desarrollar habilidades empresariales que permitan diseñar proyectos de exportacion viables,
+  competencia: Desarrollar habilidades empresariales que permitan diseñar proyectos de exportación viables,
     con base en la normatividad aduanal vigente a través del estudio de las leyes aduaneras, de comercio
     exterior y sus reglamentos, del impuesto general de importación y exportación y sus referentes internacionales,
     para el cumplimiento de los requerimientos legales y la toma de decisiones estratégicas.
@@ -43,23 +43,23 @@ mapa:
   - [Competencias Globales, 60, formacion]
   - [Tutorías, 30, formacion]
   1:
-  - [Inglés I, 225, ingles]
+  - [Inglés I, 225, ingles]
   - [Desarrollo Humano y Valores, 60, formacion]
-  - [Fundamentos Matemáticos, 105, ciencias]
+  - [Fundamentos Matemáticos, 105, ciencias]
   - [Introducción a Negocios Internacionales, 60, especifica]
   - [Introducción a la Logística, 75, especifica]
   - [Introducción a la Normatividad del Comercio Internacional, 75, especifica]
-  - [Comunicación y Habilidades Digitales, 75, especifica]
+  - [Comunicación y Habilidades Digitales, 75, especifica]
   2:
-  - [Inglés II, 150, ingles]
+  - [Inglés II, 150, ingles]
   - [Habilidades Socioemocionales y Manejo de Conflictos, 60, formacion]
-  - [Probabilidad y Estadística, 75, ciencias]
+  - [Probabilidad y Estadística, 75, ciencias]
   - [Mercadotecnia, 75, especifica]
   - [Introducción a la Economía, 75, especifica]
   - [Introducción al Sistema Armonizado y Merceología, 90, especifica]
   - [Fundamentos de Administración, 75, especifica]
   3:
-  - [Inglés III, 150, ingles]
+  - [Inglés III, 150, ingles]
   - [Desarrollo del Pensamiento y Toma de Decisiones, 60, formacion]
   - [Contabilidad, 90, ciencias]
   - [Legislación Aplicada a los Negocios., 75, especifica]
@@ -67,16 +67,16 @@ mapa:
   - [Clasificación Arancelaria I, 90, especifica]
   - [Proyecto Integrador I, 60, proyecto]
   4:
-  - [Inglés IV, 120, ingles]
-  - [Ética Profesional, 60, formacion]
+  - [Inglés IV, 120, ingles]
+  - [Ética Profesional, 60, formacion]
   - [Introducción a Pedimentos, 90, ciencias]
   - [Financiamiento y Formas de Pago Internacional, 75, especifica]
   - [Tecnologías Aplicadas al Proceso de Importación y Exportación, 75, especifica]
   - [Clasificación Arancelaria II, 75, especifica]
   - [Infracciones y Sanciones, 75, especifica]
   5:
-  - [Inglés V, 120, ingles]
-  - [Liderazgo de Equipos de Alto Desempeño, 60, formacion]
+  - [Inglés V, 120, ingles]
+  - [Liderazgo de Equipos de Alto Desempeño, 60, formacion]
   - [Medios de Defensa, 90, ciencias]
   - [Programas de Fomento a la Exportación, 90, especifica]
   - [Introducción a Procedimientos y Trámites Aduanales, 75, especifica]
@@ -85,7 +85,7 @@ mapa:
   6:
   - [Estadía · Título de TSU, 600, estadia]
   7:
-  - [Inglés VI, 105, ingles]
+  - [Inglés VI, 105, ingles]
   - [Habilidades Gerenciales, 60, formacion]
   - [Derecho Internacional, 75, ciencias]
   - [Comercio Sostenible, 90, especifica]
@@ -93,7 +93,7 @@ mapa:
   - [Logística Internacional, 75, especifica]
   - [Envase y Embalaje, 75, especifica]
   8:
-  - [Inglés VII, 105, ingles]
+  - [Inglés VII, 105, ingles]
   - [Pedimentos y Legislación Aduanera I, 75, formacion]
   - [Tratados y Acuerdos Comerciales Internacionales, 75, ciencias]
   - [Multiculturalidad y Protocolo de Negocios, 75, especifica]
@@ -101,7 +101,7 @@ mapa:
   - [Ecosistemas Digitales Comerciales, 75, especifica]
   - [Organismos de Apoyo al Comercio Exterior., 75, especifica]
   9:
-  - [Inglés VIII, 105, ingles]
+  - [Inglés VIII, 105, ingles]
   - [Pedimentos y Legislación Aduanera II, 75, formacion]
   - [Plan de Negocios de Exportación, 75, ciencias]
   - [Estrategias de Negociación Internacional, 75, especifica]

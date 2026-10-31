@@ -42,64 +42,64 @@ mapa:
   - [Competencias Globales, 60, formacion]
   - [Tutorías, 30, formacion]
   1:
-  - [Inglés I, 225, ingles]
+  - [Inglés I, 225, ingles]
   - [Desarrollo Humano y Valores, 60, formacion]
-  - [Fundamentos Matemáticos, 105, ciencias]
+  - [Fundamentos Matemáticos, 105, ciencias]
   - [Dibujo Industrial, 75, especifica]
-  - [Química Básica, 75, especifica]
-  - [Metrología, 60, especifica]
-  - [Comunicación y Habilidades Digitales, 75, especifica]
+  - [Química Básica, 75, especifica]
+  - [Metrología, 60, especifica]
+  - [Comunicación y Habilidades Digitales, 75, especifica]
   2:
-  - [Inglés II, 150, ingles]
+  - [Inglés II, 150, ingles]
   - [Habilidades Socioemocionales y Manejo de Conflictos, 60, formacion]
-  - [Cálculo Diferencial, 90, ciencias]
-  - [Física, 90, especifica]
-  - [Probabilidad y Estadística, 75, especifica]
+  - [Cálculo Diferencial, 90, ciencias]
+  - [Física, 90, especifica]
+  - [Probabilidad y Estadística, 75, especifica]
   - [Seguridad Higiene y Medio Ambiente, 75, especifica]
-  - [Costos de Producción, 60, especifica]
+  - [Costos de Producción, 60, especifica]
   3:
-  - [Inglés III, 150, ingles]
+  - [Inglés III, 150, ingles]
   - [Desarrollo del Pensamiento y Toma de Decisiones, 60, formacion]
-  - [Cálculo Integral, 60, ciencias]
+  - [Cálculo Integral, 60, ciencias]
   - [Control de Calidad, 90, especifica]
-  - [Procesos de Fabricación, 75, especifica]
+  - [Procesos de Fabricación, 75, especifica]
   - [Estudio del Trabajo, 105, especifica]
   - [Proyecto Integrador I, 60, proyecto]
   4:
-  - [Inglés IV, 120, ingles]
-  - [Ética Profesional, 60, formacion]
-  - [Cálculo de Varias Variables, 75, ciencias]
+  - [Inglés IV, 120, ingles]
+  - [Ética Profesional, 60, formacion]
+  - [Cálculo de Varias Variables, 75, ciencias]
   - salida
   5:
-  - [Inglés V, 120, ingles]
-  - [Liderazgo de Equipos de Alto Desempeño, 60, formacion]
+  - [Inglés V, 120, ingles]
+  - [Liderazgo de Equipos de Alto Desempeño, 60, formacion]
   - [Ecuaciones Diferenciales, 75, ciencias]
   - salida
   - [Proyecto Integrador II, 60, proyecto]
   6:
   - [Estadía · Título de TSU, 600, estadia]
   7:
-  - [Inglés VI, 105, ingles]
+  - [Inglés VI, 105, ingles]
   - [Habilidades Gerenciales, 60, formacion]
-  - [Ingenieria de Planta, 60, ciencias]
-  - [Investigacion de Operaciones I, 90, especifica]
+  - [Ingeniería de Planta, 60, ciencias]
+  - [Investigación de Operaciones I, 90, especifica]
   - [Manufactura Esbelta, 90, especifica]
-  - [Automatización y Control de Procesos, 90, especifica]
-  - [Topicos de Nuevas Tecnologias de Manufactura, 60, especifica]
+  - [Automatización y Control de Procesos, 90, especifica]
+  - [Tópicos de Nuevas Tecnologías de Manufactura, 60, especifica]
   8:
-  - [Inglés VII, 105, ingles]
-  - [Sistemas de Gestión de la Calidad, 75, formacion]
-  - [Logística, 75, ciencias]
-  - [Investigación de Operaciones II, 75, especifica]
+  - [Inglés VII, 105, ingles]
+  - [Sistemas de Gestión de la Calidad, 75, formacion]
+  - [Logística, 75, ciencias]
+  - [Investigación de Operaciones II, 75, especifica]
   - [6 Sigma, 75, especifica]
-  - [Diseño del Producto, 75, especifica]
-  - [Evaluacion y Administración de Proyectos, 75, especifica]
+  - [Diseño del Producto, 75, especifica]
+  - [Evaluación y Administración de Proyectos, 75, especifica]
   9:
-  - [Inglés VIII, 105, ingles]
-  - [Legislación Industrial, 60, formacion]
-  - [Administración Industrial y de Servicios, 75, ciencias]
-  - [Simulacion de Procesos, 90, especifica]
-  - [Administración del Mantenimiento, 75, especifica]
+  - [Inglés VIII, 105, ingles]
+  - [Legislación Industrial, 60, formacion]
+  - [Administración Industrial y de Servicios, 75, ciencias]
+  - [Simulación de Procesos, 90, especifica]
+  - [Administración del Mantenimiento, 75, especifica]
   - [Manufactura Integrada por Computadora, 90, especifica]
   - [Proyecto Integrador III, 60, proyecto]
   10:
@@ -112,13 +112,13 @@ salidas_tsu:
     a la competitividad y sostenibilidad de la organización.
   asignaturas:
     4:
-    - [Ingeniería de Planta y Estudio del Trabajo, 90, especifica]
-    - [Administración y Control de la Calidad, 90, especifica]
-    - [Tecnologías de Transformación de Materiales, 90, especifica]
-    - [Ingeniería Económica, 45, especifica]
+    - [Ingeniería de Planta y Estudio del Trabajo, 90, especifica]
+    - [Administración y Control de la Calidad, 90, especifica]
+    - [Tecnologías de Transformación de Materiales, 90, especifica]
+    - [Ingeniería Económica, 45, especifica]
     5:
-    - [Administración y Control de Operaciones, 105, especifica]
-    - [Gestión Ambiental en Procesos Industriales, 90, especifica]
+    - [Administración y Control de Operaciones, 105, especifica]
+    - [Gestión Ambiental en Procesos Industriales, 90, especifica]
     - [Sistemas de Manufactura Aplicada, 60, especifica]
   fuente: 30.8 MCR LIC EN ING INDUSTRIAL BIS (PROC_PROD) 2024.pdf
 - slug: sistemas-y-tecnologias-industriales
@@ -128,14 +128,14 @@ salidas_tsu:
     en plantas industriales y su cadena de suministros
   asignaturas:
     4:
-    - [Logística Interna, 90, especifica]
-    - [Ergonomia, 75, especifica]
-    - [Tecnologias de la Produccion, 75, especifica]
+    - [Logística Interna, 90, especifica]
+    - [Ergonomía, 75, especifica]
+    - [Tecnologías de la Producción, 75, especifica]
     - [Herramientas para Manufactura Esbelta, 75, especifica]
     5:
-    - [Logística Externa, 60, especifica]
-    - [Electricidad y Electrónica Industrial, 105, especifica]
-    - [Planeación de Requerimientos de Materiales, 90, especifica]
+    - [Logística Externa, 60, especifica]
+    - [Electricidad y Electrónica Industrial, 105, especifica]
+    - [Planeación de Requerimientos de Materiales, 90, especifica]
   fuente: 30.7 MCR LIC EN ING INDUSTRIAL BIS (STI) 2024.pdf
 - slug: maquinados-de-precision
   activa: false  # la UTD tiene autorización, pero hoy no la ofrece
@@ -145,12 +145,12 @@ salidas_tsu:
     a los procesos productivos especializados y estándares de calidad.
   asignaturas:
     4:
-    - [Proceso de Maquinado de Precisión No Convencional, 60, especifica]
-    - [Proceso de Maquinado de Precisión Convencional, 90, especifica]
+    - [Proceso de Maquinado de Precisión No Convencional, 60, especifica]
+    - [Proceso de Maquinado de Precisión Convencional, 90, especifica]
     - [Dibujo Asistido por Computadora, 90, especifica]
-    - [Tolerancias Geométricas y Dimensionales, 75, especifica]
+    - [Tolerancias Geométricas y Dimensionales, 75, especifica]
     5:
-    - [Proceso de Maquinado de Precisión CNC, 105, especifica]
+    - [Proceso de Maquinado de Precisión CNC, 105, especifica]
     - [Manufactura Asistida por Computadora, 90, especifica]
     - [Estructura y Propiedad de los Materiales, 60, especifica]
   fuente: 30.3 MCR LIC EN ING INDUSTRIAL BIS (MAQ_PREC) 2024.pdf
