@@ -2,6 +2,154 @@
 # Un bloque por ejercicio; dentro, un periodo por trimestre (o "Documentos anuales").
 # Para publicar un trimestre nuevo, agrega sus documentos al ejercicio correspondiente.
 ejercicios:
+- anio: 2026
+  periodos:
+  - nombre: Primer trimestre
+    documentos:
+    - titulo: Programa y Proyectos de Inversión
+      url: https://drive.google.com/file/d/1zoA9Wcii0qCsVdrEU0gz2AxNVuBFlFbM/view?usp=drive_link
+    - titulo: Notas a los Estados Financieros
+      url: https://drive.google.com/file/d/13q0NVoCqwga1dHOXCtg2uyliJLHPUbB8/view?usp=drive_link
+    - titulo: Intereses de la Deuda
+      url: https://drive.google.com/file/d/1aG1Be6r67ML1WBeMyWLRIpByCFsTQuQu/view?usp=drive_link
+    - titulo: Indicadores de Resultados
+      url: https://drive.google.com/file/d/19CznDcPZ34uadKi-14LWHuyChGBnS2Mg/view?usp=drive_link
+    - titulo: Indicadores de postura fiscal
+      url: https://drive.google.com/file/d/15a_mY5cf5Pgj5ObCGy5EBo-WAfv_fuWF/view?usp=drive_link
+    - titulo: Gasto por Categoría Programática
+      url: https://drive.google.com/file/d/1NMfyvY2n9vt1ijiOkdbmDo_KN-seyZ2b/view?usp=drive_link
+    - titulo: Estado de Variación en la Hacienda Pública
+      url: https://drive.google.com/file/d/1uAd7ad3y0EQJw6Ulbci_Bme1NWDQy2j-/view?usp=drive_link
+    - titulo: Estado de Situación Financiera
+      url: https://drive.google.com/file/d/1rC1l2k-pkoDfdhCNM_mZsm37CHVSTL7R/view?usp=drive_link
+    - titulo: Estado de Flujo de Efectivo
+      url: https://drive.google.com/file/d/1SlHImVT_MgoIL1BOQzlOEb8uzpZ2nMDb/view?usp=drive_link
+    - titulo: Estado de Cambios en la Situación Financiera
+      url: https://drive.google.com/file/d/1ICMsJJRCAB97ItYr5Bfhlv3hEd-IbwHw/view?usp=drive_link
+    - titulo: Estado de Actividades
+      url: https://drive.google.com/file/d/1FiiRY_aIVZFXrK56VlUPNzoa973tCAUl/view?usp=drive_link
+    - titulo: Estado Analítico del Ingreso
+      url: https://drive.google.com/file/d/14pls2GKVpvwjb4nQKzIU6dFLH2NmfUol/view?usp=drive_link
+    - titulo: Estado Analítico del Activo
+      url: https://drive.google.com/file/d/1bBcQDVhlAvQ1k3w-5kPhvKBcYs2S56uh/view?usp=drive_link
+    - titulo: Estado Analítico de la Deuda y Otros Pasivos
+      url: https://drive.google.com/file/d/1iYlv0kgt8RWL9E7tPfZ8pQWD9_VTe2V-/view?usp=drive_link
+    - titulo: Endeudamiento Neto
+      url: https://drive.google.com/file/d/1-1Dz3aWHSPuAAXR9GYkN4_V9-vIJX-D7/view?usp=drive_link
+    - titulo: Clasificación por Objeto del Gasto
+      url: https://drive.google.com/file/d/1JJCbL8-lpwOzBqCcEFjaS5IRO-stCGo8/view?usp=drive_link
+    - titulo: Clasificación Funcional
+      url: https://drive.google.com/file/d/18O2Cr5wwJDhX1x9QWxynhMv-ljIQLB0P/view?usp=drive_link
+    - titulo: Clasificación Económica
+      url: https://drive.google.com/file/d/1I-FwISAVfQK3GzfAtqc8YXyHFahURhEa/view?usp=drive_link
+    - titulo: Ayudas y Subsidios
+      url: https://drive.google.com/file/d/1qFJUmoyOKyRioYc49U6QY-Y4Ea-ARgrt/view?usp=drive_link
+    - titulo: Pasivos Contingentes
+      url: https://drive.google.com/file/d/1wkUOWJvPcbJXtDKdhoIgAqYlIR36FzWl/view?usp=drive_link
+    - titulo: Clasificación Administrativa
+      url: https://drive.google.com/file/d/1kuGpbteGL4yF1rlmBi_bZpAlgN05Zw74/view?usp=drive_link
+    - titulo: Conciliación entre los ingresos presupuestarios y contables
+      url: https://drive.google.com/file/d/12CPjTQ1zowN5yPdyaWUYr8vew8d0A7gt/view?usp=drive_link
+    - titulo: Flujo de fondos
+      url: https://drive.google.com/file/d/1OYICyRmfx3fKQQ5RrZd2mxgBls32H3Ag/view?usp=drive_link
+  - nombre: Segundo trimestre
+    documentos:
+    - titulo: Clasificación Administrativa
+      url: https://drive.google.com/file/d/1ZMTZpdsM7OxuhhdAcBvzkWSA9CldomkM/view?usp=drive_link
+    - titulo: Flujo de Fondos
+      url: https://drive.google.com
+    - titulo: Indicadores de Postura
+      url: https://drive.google.com/file/d/1G9pFfLv3ZWgOnkc3nh_DDR_j0HbkwiHW/view?usp=drive_link
+    - titulo: Gasto por Categoría Programática
+      url: https://drive.google.com/file/d/13gnM82o9Kn02ZjezwWMDTI2zP2jA7jdM/view?usp=drive_link
+    - titulo: Estado de Variación en la Hacienda Pública
+      url: https://drive.google.com/file/d/1rPp_uZ4svD03uToNKYjNcFl6-upmntr0/view?usp=drive_link
+    - titulo: Estado de Flujo de Efectivo
+      url: https://drive.google.com/file/d/1oSSZfjEEyjcSOnn9GkH6r1wJHdrSWvwy/view?usp=drive_link
+    - titulo: Estado de Cambios en la Situación Financiera
+      url: https://drive.google.com/file/d/19Njh1WaWwysG67Y91DI_OsfoKZslwZfX/view?usp=drive_link
+    - titulo: Estado de Actividades
+      url: https://drive.google.com/file/d/10Veyijv7CScz9enMVh0rbFqURVwJBS11/view?usp=drive_link
+    - titulo: Estado Analítico del Ingreso
+      url: https://drive.google.com/file/d/1zCWgqJrFtBAhjbGBvqi59X5WaFmXy3sb/view?usp=drive_link
+    - titulo: Estado Analítico del Activo
+      url: https://drive.google.com/file/d/1Za9drW28hnqj1bpOrHxMJPJkxiu-ekfj/view?usp=drive_link
+    - titulo: Estado Analítico de la Deuda y Otros Pasivos
+      url:  https://drive.google.com/file/d/1IlRkLEOs74Zy09p4xwlVy3KxvlYNHevB/view?usp=drive_link
+    - titulo: Endeudamiento Neto
+      url: https://drive.google.com/file/d/1sSJwjNqki1tpCcH8QpB0pZP04Z3aB-QV/view?usp=drive_link
+    - titulo: Clasificación por Objeto del Gasto
+      url: https://drive.google.com/file/d/1YIYaS2z4KVg4bu750PTpKvd0voj5cKB8/view?usp=drive_link
+    - titulo: Clasificación Funcional
+      url: https://drive.google.com/file/d/1YIYaS2z4KVg4bu750PTpKvd0voj5cKB8/view?usp=drive_link
+    - titulo: Clasificación Económica por Tipo de Gasto
+      url: https://drive.google.com/file/d/1e7F7ssHhw5ELdviLUSPf71-uv7JfE5aG/view?usp=drive_link
+    - titulo: Ayuda y Subsidios
+      url: https://drive.google.com/file/d/1umGPPnSuNGZOVveyrtU3zcPFVHwVx_EK/view?usp=drive_link
+    - titulo: Pasivos Contingentes
+      url: https://drive.google.com/file/d/1pL6pNaSFZmIb65Z5FmHRjarlVVz7b7IO/view?usp=drive_link
+    - titulo: Estado de Situación Financiera
+      url: https://drive.google.com/file/d/1eVnocIuD5aldRSA_w0Pja-OXUbiuUUWy/view?usp=drive_link
+    - titulo: Intereses de la Deuda
+      url: https://drive.google.com/file/d/1Y_9XmQWWA4kD0yGo82B69udVUArA58U_/view?usp=drive_link
+    - titulo: Indicadores de Resultado
+      url: https://drive.google.com/file/d/1G9pFfLv3ZWgOnkc3nh_DDR_j0HbkwiHW/view?usp=drive_link
+    - titulo: Programas y Proyectos de Inversión
+      url: https://drive.google.com/file/d/1zjczqd-CPTgSeeAWjAVLW-UxC_SA-aQc/view?usp=drive_link
+    - titulo: Notas a los Estados Financieros
+      url: https://drive.google.com/file/d/14Z42l53gBd8sP3gefidrusBPH-1hgNDQ/view?usp=drive_link
+    - titulo: Cuenta Pública
+      url: https://drive.google.com/file/d/1aObxvkPoeHHgtTZ5HOuOgkXe6pfQHTEc/view?usp=drive_link
+    - titulo: Inventario de bienes muebles e inmuebles
+      url: https://drive.google.com/file/d/15O_W5-eakB3AZPRZnuMGfyHuyU-ZNB_w/view?usp=drive_link
+  - nombre: Tercer trimestre
+    documentos:
+    - titulo: Clasificación Económica
+      url: https://drive.google.com/file/d/1nJpJ9sizOoa_-eEVL-udzTjKOLAtPNwn/view?usp=sharing
+    - titulo: Categoria programática
+      url: https://drive.google.com/file/d/1t8sv3yDv2RqHNGKOlNHd8PPxtuJZcPhX/view?usp=sharing
+    - titulo: Clasificación Administrativa
+      url: https://drive.google.com/file/d/1HdrN6WmAtvt-PiX1Dt-CDN5yAkO2R4kC/view?usp=sharing
+    - titulo: Conciliación entre los ingresos presupuestarios y contables
+      url: https://drive.google.com
+    - titulo: Clasificación por objeto del gasto
+      url: https://drive.google.com/file/d/1y8rb71Q30MjGs1C_2fbj8AUaXtSvw7QK/view?usp=sharing
+    - titulo: Clasificación funcional
+      url: https://drive.google.com/file/d/19q0cNdXJXAhWsS1Nnvb_q8ArzpAfxcu4/view?usp=sharing
+    - titulo: Estado analítico de ingresos
+      url: https://drive.google.com/file/d/18jz4RphiucrQzOs42e-Q_P_KD6THl4NX/view?usp=sharing
+    - titulo: Endeudamiento neto
+      url: https://drive.google.com/file/d/1d1KuwVJkd5ThCfeL0F2DRyp622y_mCuJ/view?usp=sharing
+    - titulo: Estado analítico de la deuda y otros pasivos
+      url: https://drive.google.com/file/d/1mSRisFvBQSIycP1HvS_M5W8O2CfE3OZB/view?usp=sharing
+    - titulo: Estado analítico del activo
+      url: https://drive.google.com/file/d/1iN91-d6Lw2HQbkEVZpHPhw3leC0IyZRt/view?usp=sharing
+    - titulo: Estado de actividades
+      url: https://drive.google.com/file/d/1LzLV8Xmr038RkgL4EqB6zARaEqC_Lg0Y/view?usp=sharing
+    - titulo: Estado de flujos de efectivo
+      url: https://drive.google.com/file/d/1EKVZ24u2yAcqAPyo6r6Tr2hWCIiA4qmr/view?usp=sharing
+    - titulo: Estado de cambios en la situación financiera
+      url: https://drive.google.com/file/d/1CyB51wFnNNBfZC7tGi3p6wi35Wo7awrc/view?usp=sharing
+    - titulo: Estado de situación financiera
+      url: https://drive.google.com/file/d/1cOxr7IbEcOIv47PDSouxO1UW0Lk7mi5H/view?usp=sharing
+    - titulo: Estado de variación en la hacienda pública
+      url: https://drive.google.com/file/d/1EqfwPoHUAtoVbMaX7aKATk6x-9ioSx0W/view?usp=sharing
+    - titulo: Indicadores de postura fiscal
+      url: https://drive.google.com/file/d/1udSqlpWEqHZIqs-vNlqGfLkBI4UU1OgC/view?usp=sharing
+    - titulo: Informe sobre pasivos contingentes
+      url: https://drive.google.com/file/d/1_Yt-7ofrZLX1ALtvPoALq68nZ6V_v4Os/view?usp=sharing
+    - titulo: Indicadores de resultados
+      url: https://drive.google.com/file/d/1qy2T_kULxcZDk2W5KTLkRtWdBK3yjctW/view?usp=sharing
+    - titulo: Intereses de la deuda
+      url: https://drive.google.com/file/d/1P62NSPQMAKw2hzy7KgqGalwv4rSyfCVK/view?usp=sharing
+    - titulo: Notas a los estados financieros
+      url: https://drive.google.com/file/d/1WSaHaWEqoBSybydYBEVOkhLa6qdg4GPv/view?usp=sharing
+    - titulo: Programas y proyectos de inversión
+      url: https://drive.google.com/file/d/1RxypfnbNLHef7_MR9Qr0pM5_nm5J3xDO/view?usp=sharing
+    - titulo: Manual de contabilidad
+      url: https://drive.google.com/file/d/1gcJqylmpDaS9mVezZ-z0bBqCSf9J2lrv/view?usp=sharing
+    - titulo: Ayudas y subsidios
+      url: https://drive.google.com/file/d/1OywHFDTRY1y65f-ONuwvEk_soH-tXs3b/view?usp=sharing
 - anio: 2025
   periodos:
   - nombre: Primer trimestre
